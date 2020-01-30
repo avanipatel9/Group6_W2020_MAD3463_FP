@@ -80,6 +80,11 @@ abstract class Person
     public void setPassword(String password) {
         this.password = password;
     }
-
+    
+    public int  getAge()
+    {
+        int age = Period.between(birthDate, LocalDate.now()).getYears();
+        return age;
+    }
 
 }
