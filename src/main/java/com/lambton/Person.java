@@ -1,6 +1,4 @@
 package com.lambton;
-
-
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -90,6 +88,7 @@ abstract class Person {
         this.password = password;
     }
 
+    //[AP]get age from birthdate
     public int getAge() {
         int age;
         age = Period.between(birthDate, LocalDate.now()).getYears();
