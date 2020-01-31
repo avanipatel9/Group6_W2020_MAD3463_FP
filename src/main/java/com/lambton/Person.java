@@ -11,8 +11,7 @@ enum Gender
     OTHERS
 }
 
-abstract class Person
-{
+abstract class Person {
     private int id;
     private String firstName;
     private String lastName;
@@ -91,32 +90,12 @@ abstract class Person
         this.password = password;
     }
 
-    public int  getAge()
-    {
+    public int getAge() {
         int age;
         age = Period.between(birthDate, LocalDate.now()).getYears();
         return age;
     }
-
-import java.net.PasswordAuthentication;
-import java.time.LocalDate;
-
-enum Gender{MALE,
-    FEMALE,
-    OTHERS};
-public abstract class Person
-{
-
-     Integer id;
-     String firstName;
-     String lastName;
-     Gender gender;
-     LocalDate birthDate;
-    String mobileNumber;
-    String email;
-    String userName;
-    String password;
-
-
-
 }
+
+
+
