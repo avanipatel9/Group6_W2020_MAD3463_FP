@@ -1,5 +1,5 @@
-package com.lambton;
- abstract class Vehicle
+package com.lambton.vehicle;
+ public abstract class Vehicle
 {
     String vehicleIdNumber;
     String vehicleInfo;

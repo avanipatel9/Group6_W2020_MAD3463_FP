@@ -1,8 +1,11 @@
-package com.lambton;
+package com.lambton.person;
+
+import com.lambton.VehicleRent;
+import com.lambton.person.Person;
 
 import java.util.ArrayList;
 
-public class Customer extends  Person
+public class Customer extends Person
 {
     private String address;
     private String city;

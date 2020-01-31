@@ -1,8 +1,10 @@
-package com.lambton;
+package com.lambton.person;
+
+import com.lambton.vehicle.Vehicle;
 
 import java.util.List;
 
-public class Owner extends  Person
+public class Owner extends Person
 {
     private String companyTitle;
     private  String landlineNumber;

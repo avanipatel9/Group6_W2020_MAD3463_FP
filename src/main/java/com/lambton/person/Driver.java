@@ -1,4 +1,6 @@
-package com.lambton;
+package com.lambton.person;
+
+import com.lambton.person.Person;
 
 public class Driver extends Person
 {

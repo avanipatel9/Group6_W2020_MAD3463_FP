@@ -1,4 +1,6 @@
 package com.lambton;
+import com.lambton.vehicle.Vehicle;
+
 import java.util.ArrayList;
 import  java.util.Date;
 
