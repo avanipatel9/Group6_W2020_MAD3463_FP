@@ -5,9 +5,9 @@ import java.time.Period;
 
 enum Gender
 {
-    Male,
-    Female,
-    Others
+    MALE,
+    FEMALE,
+    OTHERS
 }
 
 abstract class Person
@@ -15,6 +15,7 @@ abstract class Person
     private int id;
     private String firstName;
     private String lastName;
+    private Gender gender;
     private LocalDate birthDate;
     private String mobileNumber;
     private String emailID;
@@ -39,6 +40,14 @@ abstract class Person
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     public LocalDate getBirthDate() {
@@ -83,7 +92,8 @@ abstract class Person
 
     public int  getAge()
     {
-        int age = Period.between(birthDate, LocalDate.now()).getYears();
+        int age;
+        age = Period.between(birthDate, LocalDate.now()).getYears();
         return age;
     }
 
