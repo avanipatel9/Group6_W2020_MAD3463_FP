@@ -3,6 +3,7 @@ import com.lambton.IDisplay;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 enum Gender
@@ -19,9 +20,11 @@ enum Gender
     private Gender gender;
     private LocalDate birthDate;
     private String mobileNumber;
-    private String emailID;
+    private String emailID = "anpatel36@yahoo.in";
     private String userName;
     private String password;
+
+
 
      public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
          this.id = id;
@@ -79,13 +82,24 @@ enum Gender
         this.mobileNumber = mobileNumber;
     }
 
+
+
     public String getEmailID() {
         return emailID;
     }
 
-   /* public void setEmailID(String emailID) {
-        this.emailID = emailID;
-    }*/
+   public void setEmailID(String emailID) {
+         boolean valid = validateEmail(emailID);
+         if(valid == true)
+         {
+             this.emailID = emailID;
+         }
+         else
+         {
+             System.out.println("Invalid email Id");
+         }
+
+    }
 
     public String getUserName() {
         return userName;
@@ -109,6 +123,22 @@ enum Gender
         age = Period.between(birthDate, LocalDate.now()).getYears();
         return age;
     }
+
+     // Email Regex java
+     private static final String EMAIL_REGEX = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
+
+     // static Pattern object, since pattern is fixed
+     private static Pattern pattern = Pattern.compile(EMAIL_REGEX, Pattern.CASE_INSENSITIVE);
+
+     // non-static Matcher object because it's created from the input String
+     private Matcher matcher;
+
+
+     public boolean validateEmail(String email) {
+         matcher = pattern.matcher(email);
+         return matcher.matches();
+     }
+
 
 
 }
