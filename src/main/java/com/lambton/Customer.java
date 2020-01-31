@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Customer extends  Person
 {
-    String address;
-    String city;
+    private String address;
+    private String city;
     ArrayList<VehicleRent> vehicleRents;
 
     public String getAddress() {

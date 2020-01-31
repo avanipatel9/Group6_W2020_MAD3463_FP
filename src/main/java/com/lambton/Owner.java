@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Owner extends  Person
 {
-    String companyTitle;
-    String landlineNumber;
-    String website;
+    private String companyTitle;
+    private  String landlineNumber;
+    private String website;
     List<Vehicle> vehicles;
 
     public String getCompanyTitle() {

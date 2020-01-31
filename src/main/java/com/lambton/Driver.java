@@ -2,9 +2,9 @@ package com.lambton;
 
 public class Driver extends Person
 {
-    int drivingLicenceNumber;
-    boolean isDrivingHistoryCleared;
-    float salary;
+    private int drivingLicenceNumber;
+    private boolean isDrivingHistoryCleared;
+    private float salary;
 
     public int getDrivingLicenceNumber() {
         return drivingLicenceNumber;
