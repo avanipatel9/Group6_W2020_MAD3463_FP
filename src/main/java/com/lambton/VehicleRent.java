@@ -11,6 +11,17 @@ public class VehicleRent
     double noOfKmDerived;
     double totalBillToPay;
 
+    //Singleton class implementation
+    private static volatile VehicleRent vVehicleRent = new VehicleRent();
+
+    //private constructor.
+    private VehicleRent(){}
+
+    public static VehicleRent getInstance() {
+        return vVehicleRent;
+    }
+
+
     public Date getRentStartDate() {
         return rentStartDate;
     }
