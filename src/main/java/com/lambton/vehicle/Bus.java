@@ -6,6 +6,13 @@ public class Bus
     boolean serviceAvailability;
     boolean wifiAvailability;
 
+    public Bus(String busType, boolean serviceAvailability, boolean wifiAvailability)
+    {
+        this.busType = busType;
+        this.serviceAvailability = serviceAvailability;
+        this.wifiAvailability = wifiAvailability;
+    }
+
     public String getBusType() {
         return busType;
     }
