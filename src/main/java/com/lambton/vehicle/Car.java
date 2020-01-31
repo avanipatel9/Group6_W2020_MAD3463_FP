@@ -5,6 +5,12 @@ public class Car
     String carType;
     String carColor;
 
+    public Car(String carType, String carColor)
+    {
+        this.carType = carType;
+        this.carColor = carColor;
+    }
+
     public String getCarType() {
         return carType;
     }
