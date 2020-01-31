@@ -1,6 +1,9 @@
 package com.lambton.person;
+import com.lambton.IDisplay;
+
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.regex.Pattern;
 
 enum Gender
 {
@@ -9,7 +12,7 @@ enum Gender
     OTHERS
 }
 
-abstract class Person {
+ public abstract class Person implements IDisplay {
     private int id;
     private String firstName;
     private String lastName;
@@ -20,7 +23,19 @@ abstract class Person {
     private String userName;
     private String password;
 
-    public int getId() {
+     public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
+         this.id = id;
+         this.firstName = firstName;
+         this.lastName = lastName;
+         this.gender = gender;
+         this.birthDate = birthDate;
+         this.mobileNumber = mobileNumber;
+         this.emailID = emailID;
+         this.userName = userName;
+         this.password = password;
+     }
+
+     public int getId() {
         return id;
     }
 
@@ -68,9 +83,9 @@ abstract class Person {
         return emailID;
     }
 
-    public void setEmailID(String emailID) {
+   /* public void setEmailID(String emailID) {
         this.emailID = emailID;
-    }
+    }*/
 
     public String getUserName() {
         return userName;
@@ -94,6 +109,8 @@ abstract class Person {
         age = Period.between(birthDate, LocalDate.now()).getYears();
         return age;
     }
+
+    
 }
 
 
