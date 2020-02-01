@@ -20,7 +20,7 @@ enum Gender
     private Gender gender;
     private LocalDate birthDate;
     private String mobileNumber;
-    private String emailID = "anpatel36@yahoo.in";
+    private String emailID;
     private String userName;
     private String password;
 
@@ -138,8 +138,6 @@ enum Gender
          matcher = pattern.matcher(email);
          return matcher.matches();
      }
-
-
 
 }
 
