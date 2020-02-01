@@ -1,5 +1,5 @@
-package com.lambton;
- abstract class Vehicle
+package com.lambton.vehicle;
+ public abstract class Vehicle
 {
     String vehicleIdNumber;
     String vehicleInfo;
@@ -12,6 +12,20 @@ package com.lambton;
     String fuelType;
     int ratePerDay;
     double ratePerKM;
+
+    public Vehicle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM) {
+        this.vehicleIdNumber = vehicleIdNumber;
+        this.vehicleInfo = vehicleInfo;
+        this.manufacturerName = manufacturerName;
+        this.isSelfDrive = isSelfDrive;
+        this.driver = driver;
+        this.isInsured = isInsured;
+        this.insuranceProviderName = insuranceProviderName;
+        this.numberOfSeats = numberOfSeats;
+        this.fuelType = fuelType;
+        this.ratePerDay = ratePerDay;
+        this.ratePerKM = ratePerKM;
+    }
 
     public String getVehicleIdNumber() {
         return vehicleIdNumber;

@@ -1,6 +1,10 @@
-package com.lambton;
+package com.lambton.person;
+import com.lambton.IDisplay;
+
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 enum Gender
 {
@@ -9,18 +13,32 @@ enum Gender
     OTHERS
 }
 
-abstract class Person {
+ public abstract class Person implements IDisplay {
     private int id;
     private String firstName;
     private String lastName;
     private Gender gender;
     private LocalDate birthDate;
     private String mobileNumber;
-    private String emailID;
+    private String emailID = "anpatel36@yahoo.in";
     private String userName;
     private String password;
 
-    public int getId() {
+
+
+     public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
+         this.id = id;
+         this.firstName = firstName;
+         this.lastName = lastName;
+         this.gender = gender;
+         this.birthDate = birthDate;
+         this.mobileNumber = mobileNumber;
+         this.emailID = emailID;
+         this.userName = userName;
+         this.password = password;
+     }
+
+     public int getId() {
         return id;
     }
 
@@ -64,12 +82,23 @@ abstract class Person {
         this.mobileNumber = mobileNumber;
     }
 
+
+
     public String getEmailID() {
         return emailID;
     }
 
-    public void setEmailID(String emailID) {
-        this.emailID = emailID;
+   public void setEmailID(String emailID) {
+         boolean valid = validateEmail(emailID);
+         if(valid == true)
+         {
+             this.emailID = emailID;
+         }
+         else
+         {
+             System.out.println("Invalid email Id");
+         }
+
     }
 
     public String getUserName() {
@@ -94,6 +123,24 @@ abstract class Person {
         age = Period.between(birthDate, LocalDate.now()).getYears();
         return age;
     }
+
+     // Email Regex java
+     private static final String EMAIL_REGEX = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
+
+     // static Pattern object, since pattern is fixed
+     private static Pattern pattern = Pattern.compile(EMAIL_REGEX, Pattern.CASE_INSENSITIVE);
+
+     // non-static Matcher object because it's created from the input String
+     private Matcher matcher;
+
+
+     public boolean validateEmail(String email) {
+         matcher = pattern.matcher(email);
+         return matcher.matches();
+     }
+
+
+
 }
 
 
