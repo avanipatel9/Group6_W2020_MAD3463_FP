@@ -95,6 +95,28 @@ public class VehicleRentingSystem {
                 "mleaman3", "lMMMbM3OZu0F", "Christiansen", "9848129", "imdb.com", null);
 
 
+        Car ca1 = new Car("11", "", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
+                4, "Diesel", 100, 5, "SUV", "Black");
+
+        Car ca2 = new Car("12", "", "Suzuki", Boolean.FALSE, "Alford", Boolean.TRUE, "Ben",
+                6, "Diesel", 200, 10, "Sedan", "Gray");
+
+        Car ca3 = new Car("13", "", "Honda", Boolean.TRUE, "Gusty", Boolean.TRUE, "William",
+                2, "Electric", 50, 5, "Compact", "White");
+
+        Car ca4 = new Car("14", "", "BMW", Boolean.TRUE, "Alford", Boolean.TRUE, "Edward",
+                4, "Petrol", 250, 15, "Luxury", "Red");
+
+        Car ca5 = new Car("15", "", "Toyoto", Boolean.FALSE, "Padraig", Boolean.FALSE, "Phenix",
+                8, "Diesel", 350, 20, "Minivan", "Black");
+
+
+
+
+
+
+
+
 
     }
 }
