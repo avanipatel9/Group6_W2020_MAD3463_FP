@@ -25,72 +25,74 @@ public class VehicleRentingSystem {
         System.setOut(console);
         System.out.println("This will be written on the console!");
 
+        VehicleRentingSystem vrs = new VehicleRentingSystem();
+
 
         LocalDate c1birthDate = LocalDate.of(1993,02,27);
-        Customer c1 = new Customer(1,"John", "Thomas", Gender.MALE, c1birthDate,
+        Customer c1 = new Customer(1,"John", "Thomas", "Male", c1birthDate,
         "4782257410", "John123@gmail.com", "John_123", "John123", "26,Painted Post",
         "Brampton", null);
 
         LocalDate c2birthDate = LocalDate.of(1979,12,2);
-      Customer c2 = new Customer(2,"Johnsan", "Kale", Gender.MALE, c2birthDate,
+      Customer c2 = new Customer(2,"Johnsan", "Kale", "Male", c2birthDate,
                 "4782275810", "Johnsan123@gmail.com", "John35", "John@123",
               "26,Markham Road","Toronto", null);
 
         LocalDate c3birthDate = LocalDate.of(1989,04,30);
-        Customer c3 = new Customer(3,"Christiana", "Roger", Gender.FEMALE, c3birthDate,
+        Customer c3 = new Customer(3,"Christiana", "Roger", "Female", c3birthDate,
                 "6478587419", "Christ@gmail.com", "Christiana_Roger", "xaY32@tyu",
                 "B143,Mornington Road","Scarborough", null);
 
         LocalDate c4birthDate = LocalDate.of(1990,11,16);
-        Customer c4 = new Customer(4,"Aubrie", "Clucas", Gender.MALE, c4birthDate,
+        Customer c4 = new Customer(4,"Aubrie", "Clucas", "Male", c4birthDate,
                 "8795514792", "Aurbie@gmail.com", "Ruby_12", "tre5TY@tyu",
                 "6488 Bellgrove Plaza","Okinawa ", null);
 
         LocalDate c5birthDate = LocalDate.of(1986,07,19);
-        Customer c5 = new Customer(5,"Lorelei ", "Anshell", Gender.FEMALE, c5birthDate,
+        Customer c5 = new Customer(5,"Lorelei ", "Anshell", "Female", c5birthDate,
                 "2576690158", "lanshell1@reverbnation.com", "lanshell1", "L7ZvtX5wJN",
                 "34 Fuller Lane","Novorossiysk", null);
 
 
         LocalDate d1birthDate = LocalDate.of(1972,06,17);
-        Driver d1 = new Driver(1, "Phebe", "Regitz", Gender.MALE,d1birthDate, "6757862345", "pregitz0@sohu.com",
+        Driver d1 = new Driver(1, "Phebe", "Regitz", "Male",d1birthDate, "6757862345", "pregitz0@sohu.com",
                 "pregitz0", "r6mFc6", 57656258, true, 1500);
 
         LocalDate d2birthDate = LocalDate.of(1989,05,27);
-        Driver d2 = new Driver(2, "Alford", "Greenshields", Gender.FEMALE,d2birthDate, "5792798502", "agreenshields1@mit.edu",
+        Driver d2 = new Driver(2, "Alford", "Greenshields", "Female",d2birthDate, "5792798502", "agreenshields1@mit.edu",
                 "agreenshields1", "xpKQpM", 57656723, true, 2000);
 
         LocalDate d3birthDate = LocalDate.of(1982,04,30);
-        Driver d3 = new Driver(3, "Genni", "Tumielli", Gender.MALE,d3birthDate, "7890251963", "gtumielli2@typepad.com",
+        Driver d3 = new Driver(3, "Genni", "Tumielli", "Male",d3birthDate, "7890251963", "gtumielli2@typepad.com",
                 "gtumielli2", "L72MVz", 78902514, false, 2500);
 
         LocalDate d4birthDate = LocalDate.of(1998,03,12);
-        Driver d4 = new Driver(4, "Padraig", "Stanwix", Gender.MALE,d4birthDate, "7036971852", "pstanwix3@themeforest.net",
+        Driver d4 = new Driver(4, "Padraig", "Stanwix", "Male",d4birthDate, "7036971852", "pstanwix3@themeforest.net",
                 "pstanwix3", "SOaoCxBAm9Go", 78526723, true, 3000);
 
         LocalDate d5birthDate = LocalDate.of(1989,02,29);
-        Driver d5 = new Driver(5, "Gusty", "Mityakov", Gender.FEMALE,d5birthDate, "6852089175", "gmityakov4@howstuffworks.com",
+        Driver d5 = new Driver(5, "Gusty", "Mityakov", "Female",d5birthDate, "6852089175", "gmityakov4@howstuffworks.com",
                 "gmityakov4", "CGHjDQVnhA", 57125823, false, 1000);
 
 
         LocalDate o1birthDate = LocalDate.of(1992,11,12);
-        Owner o1 = new Owner(1, "Logan", "Smith", Gender.MALE, o1birthDate, "6851478520", "LoganSmith@yahoo.com",
+        Owner o1 = new Owner(1, "Logan", "Smith", "Male", o1birthDate, "6851478520", "LoganSmith@yahoo.com",
                 "Logan_12", "Logan@12342", "Tillman, Hand and Aufderhar", "9825147", "Carzz@ca", null);
 
         LocalDate o2birthDate = LocalDate.of(1985,01,13);
-        Owner o2 = new Owner(2, "Grannie", "Fairbanks", Gender.MALE, o2birthDate, "6851478520", "gfairbanks0@cbsnews.com",
+        Owner o2 = new Owner(2, "Grannie", "Fairbanks", "Male", o2birthDate, "6851478520", "gfairbanks0@cbsnews.com",
                 "gfairbanks0", "VR8wcd", "Rosenbaum, Schaden and O'Kon", "1791023", "washington.edu", null);
 
         LocalDate o3birthDate = LocalDate.of(1978,07,15);
-        Owner o3 = new Owner(3, "Dicky", "Poli", Gender.MALE, o3birthDate, "6851478520", "dpoli1@drupal.org",
+        Owner o3 = new Owner(3, "Dicky", "Poli", "Male", o3birthDate, "6851478520", "dpoli1@drupal.org",
                 "dpoli1", "HhTUiByP", "Rice Group", "4229698", "bigcartel.com", null);
 
         LocalDate o4birthDate = LocalDate.of(1982,10,26);
-        Owner o4 = new Owner(4, "Ralf", "Rossetti", Gender.MALE, o4birthDate, "6851478520", "rrossetti2@ca.gov",
+        Owner o4 = new Owner(4, "Ralf", "Rossetti", "Male", o4birthDate, "6851478520", "rrossetti2@ca.gov",
                 "rrossetti2", "YO43tFQFcqap", "Fadel, Pollich and Schulist", "5288027", "pinterest.com", null);
 
         LocalDate o5birthDate = LocalDate.of(1991,12,14);
-        Owner o5 = new Owner(5, "Madlin", "Leaman", Gender.MALE, o5birthDate, "6851478520", "mleaman3@adobe.com",
+        Owner o5 = new Owner(5, "Madlin", "Leaman", "Male", o5birthDate, "6851478520", "mleaman3@adobe.com",
                 "mleaman3", "lMMMbM3OZu0F", "Christiansen", "9848129", "imdb.com", null);
 
 
