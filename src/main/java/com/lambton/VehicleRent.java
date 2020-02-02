@@ -48,6 +48,13 @@ public class VehicleRent
         return totalDaysOfRent;
     }
 
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
 
     public double getNoOfKmDerived() {
         return noOfKmDerived;
