@@ -14,15 +14,15 @@ enum Gender
 }
 
  public abstract class Person implements IDisplay {
-    private int id;
-    private String firstName;
-    private String lastName;
-    private Gender gender;
-    private LocalDate birthDate;
-    private String mobileNumber;
-    private String emailID;
-    private String userName;
-    private String password;
+    protected int id;
+    protected String firstName;
+    protected  String lastName;
+    protected Gender gender;
+    protected LocalDate birthDate;
+    protected String mobileNumber;
+    protected String emailID;
+    protected String userName;
+    protected String password;
 
 
 
@@ -65,7 +65,6 @@ enum Gender
     public void setGender(Gender gender) {
         this.gender = gender;
     }
-
     public LocalDate getBirthDate() {
         return birthDate;
     }
@@ -85,20 +84,20 @@ enum Gender
 
 
     public String getEmailID() {
-        return emailID;
+         return emailID;
     }
 
    public void setEmailID(String emailID) {
-         boolean valid = validateEmail(emailID);
-         if(valid == true)
-         {
-             this.emailID = emailID;
-         }
-         else
-         {
-             System.out.println("Invalid email Id");
-         }
+       boolean valid = validateEmail(emailID);
+       if(valid == false)
+       {
+           System.out.println("Invalid email Id");
 
+       }
+       else
+           {
+               this.emailID = emailID;
+           }
     }
 
     public String getUserName() {
@@ -117,7 +116,7 @@ enum Gender
         this.password = password;
     }
 
-    //[AP]get age from birthdate
+    // Get age from birthdate
     public int getAge() {
         int age;
         age = Period.between(birthDate, LocalDate.now()).getYears();
@@ -135,11 +134,20 @@ enum Gender
 
 
      public boolean validateEmail(String email) {
+         email = emailID;
          matcher = pattern.matcher(email);
+         System.out.println(matcher.matches());
          return matcher.matches();
      }
 
-}
+
+
+
+ }
+
+
+
+
 
 
 

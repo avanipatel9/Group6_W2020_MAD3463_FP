@@ -1,8 +1,6 @@
 package com.lambton.person;
 
 import com.lambton.VehicleRent;
-import com.lambton.person.Person;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 

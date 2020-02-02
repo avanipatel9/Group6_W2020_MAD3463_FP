@@ -1,13 +1,12 @@
 package com.lambton;
 import com.lambton.vehicle.Vehicle;
-
+import java.time.LocalDate;
 import java.util.ArrayList;
-import  java.util.Date;
 
 public class VehicleRent
 {
-    Date rentStartDate;
-    Date rentEndDate;
+    LocalDate rentStartDate;
+    LocalDate rentEndDate;
     int totalDaysOfRent;
     ArrayList<Vehicle> vehicles;
     double noOfKmDerived;
@@ -24,25 +23,26 @@ public class VehicleRent
     }
 
 
-    public Date getRentStartDate() {
+    public LocalDate getRentStartDate() {
         return rentStartDate;
     }
 
-    public void setRentStartDate(Date rentStartDate) {
+    public void setRentStartDate(LocalDate rentStartDate) {
         this.rentStartDate = rentStartDate;
     }
 
-    public Date getRentEndDate() {
+    public LocalDate getRentEndDate() {
         return rentEndDate;
     }
 
-    public void setRentEndDate(Date rentEndDate) {
+    public void setRentEndDate(LocalDate rentEndDate) {
         this.rentEndDate = rentEndDate;
     }
 
     public int getTotalDaysOfRent() {
         return totalDaysOfRent;
     }
+
 
     public double getNoOfKmDerived() {
         return noOfKmDerived;
@@ -52,3 +52,5 @@ public class VehicleRent
         return totalBillToPay;
     }
 }
+
+

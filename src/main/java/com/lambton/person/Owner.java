@@ -12,8 +12,8 @@ public class Owner extends Person
     private String website;
     List<Vehicle> vehicles;
 
-    public Owner(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String companyTitle, String landlineNumber, String website, List<Vehicle> vehicles) {
-        super(id, firstName, lastName, gender, birthDate, mobileNumber, emailID, userName, password);
+    public Owner(int id, String firstName, String lastName,Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String companyTitle, String landlineNumber, String website, List<Vehicle> vehicles) {
+        super(id, firstName, lastName,gender, birthDate, mobileNumber, emailID, userName, password);
         this.companyTitle = companyTitle;
         this.landlineNumber = landlineNumber;
         this.website = website;

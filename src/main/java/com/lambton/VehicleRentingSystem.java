@@ -1,13 +1,14 @@
 package com.lambton;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
+
+
 public class VehicleRentingSystem {
     public static void main(String[] args) throws FileNotFoundException {
         // Creating a File object that represents the disk file.
-        PrintStream o = new PrintStream(new File("Output.txt"));
+       PrintStream o = new PrintStream(new File("Output.txt"));
         // Store current System.out before assigning a new value
         PrintStream console = System.out;
         // Assign o to output stream
@@ -18,6 +19,7 @@ public class VehicleRentingSystem {
         // Use stored value for output stream
         System.setOut(console);
         System.out.println("This will be written on the console!");
+
 
     }
 }
