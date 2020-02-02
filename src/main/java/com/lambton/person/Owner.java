@@ -45,7 +45,7 @@ public class Owner extends Person
     }
 
     @Override
-    public void display()
+    public void print()
     {
         System.out.println("Customer First Name : " + super.firstName);
         System.out.println("Customer Last Name : " + super.lastName);
