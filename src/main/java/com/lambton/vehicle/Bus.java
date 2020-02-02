@@ -36,4 +36,9 @@ public class Bus extends Vehicle
     public void setWifiAvailability(boolean wifiAvailability) {
         this.wifiAvailability = wifiAvailability;
     }
+
+    @Override
+    public void print() {
+
+    }
 }

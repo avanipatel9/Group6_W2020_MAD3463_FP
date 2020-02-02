@@ -26,4 +26,9 @@ public class MotorCycle extends Vehicle
     public void setMilage(float milage) {
         Milage = milage;
     }
+
+    @Override
+    public void print() {
+        
+    }
 }
