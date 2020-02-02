@@ -45,7 +45,18 @@ public class Owner extends Person
     }
 
     @Override
-    public void display() {
-
+    public void display()
+    {
+        System.out.println("Customer First Name : " + super.firstName);
+        System.out.println("Customer Last Name : " + super.lastName);
+        System.out.println("Gender : " + super.gender);
+        System.out.println("Birth Date : " + super.birthDate);
+        System.out.println("Age : " + super.getAge());
+        System.out.println("Mobile Number : +1 " + super.mobileNumber);
+        System.out.println("Email Id : " + super.emailID);
+        System.out.println("Username : " + super.userName);
+        System.out.println("Company Name : " + companyTitle);
+        System.out.println("Landline number : " + landlineNumber);
+        System.out.println("Website : " + website);
     }
 }
