@@ -1,5 +1,6 @@
 package com.lambton;
 import com.lambton.person.Customer;
+import com.lambton.person.Driver;
 import com.lambton.person.Gender;
 import com.lambton.vehicle.Car;
 
@@ -49,6 +50,27 @@ public class VehicleRentingSystem {
         Customer c5 = new Customer(5,"Lorelei ", "Anshell", Gender.FEMALE, c5birthDate,
                 "2576690158", "lanshell1@reverbnation.com", "lanshell1", "L7ZvtX5wJN",
                 "34 Fuller Lane","Novorossiysk");
+
+
+        LocalDate d1birthDate = LocalDate.of(1972,02,17);
+        Driver d1 = new Driver(1, "Phebe", "Regitz", Gender.MALE,d1birthDate, "6757862345", "pregitz0@sohu.com",
+                "pregitz0", "r6mFc6", 57656258, true, 1500);
+
+        LocalDate d2birthDate = LocalDate.of(1972,02,17);
+        Driver d2 = new Driver(2, "Alford", "Greenshields", Gender.FEMALE,d2birthDate, "5792798502", "agreenshields1@mit.edu",
+                "agreenshields1", "xpKQpM", 57656723, true, 2000);
+
+        LocalDate d3birthDate = LocalDate.of(1972,02,17);
+        Driver d3 = new Driver(3, "Genni", "Tumielli", Gender.MALE,d3birthDate, "7890251963", "gtumielli2@typepad.com",
+                "gtumielli2", "L72MVz", 78902514, false, 2500);
+
+        LocalDate d4birthDate = LocalDate.of(1972,02,17);
+        Driver d4 = new Driver(4, "Padraig", "Stanwix", Gender.MALE,d4birthDate, "7036971852", "pstanwix3@themeforest.net",
+                "pstanwix3", "SOaoCxBAm9Go", 78526723, true, 3000);
+
+        LocalDate d5birthDate = LocalDate.of(1972,02,17);
+        Driver d5 = new Driver(5, "Gusty", "Mityakov", Gender.FEMALE,d5birthDate, "6852089175", "gmityakov4@howstuffworks.com",
+                "gmityakov4", "CGHjDQVnhA", 57125823, false, 1000);
 
     }
 }
