@@ -25,11 +25,13 @@ public class VehicleRentingSystem {
         System.setOut(console);
         System.out.println("This will be written on the console!");
 
-
+        //Customer Object
         LocalDate c1birthDate = LocalDate.of(1993,02,27);
-        Customer c1 = new Customer(1,"John", "Thomas", Gender.MALE, c1birthDate,
+        Customer c1 = new Customer(1,"John", "Thomas",Gender.MALE, c1birthDate,
         "4782257410", "John123@gmail.com", "John_123", "John123", "26,Painted Post",
         "Brampton", null);
+        System.setOut(o);
+        c1.print();
 
         LocalDate c2birthDate = LocalDate.of(1979,12,2);
       Customer c2 = new Customer(2,"Johnsan", "Kale", Gender.MALE, c2birthDate,
@@ -52,6 +54,8 @@ public class VehicleRentingSystem {
                 "34 Fuller Lane","Novorossiysk", null);
 
 
+
+        //Driver object
         LocalDate d1birthDate = LocalDate.of(1972,06,17);
         Driver d1 = new Driver(1, "Phebe", "Regitz", Gender.MALE,d1birthDate, "6757862345", "pregitz0@sohu.com",
                 "pregitz0", "r6mFc6", 57656258, true, 1500);
@@ -73,6 +77,7 @@ public class VehicleRentingSystem {
                 "gmityakov4", "CGHjDQVnhA", 57125823, false, 1000);
 
 
+        //Owner object
         LocalDate o1birthDate = LocalDate.of(1992,11,12);
         Owner o1 = new Owner(1, "Logan", "Smith", Gender.MALE, o1birthDate, "6851478520", "LoganSmith@yahoo.com",
                 "Logan_12", "Logan@12342", "Tillman, Hand and Aufderhar", "9825147", "Carzz@ca", null);
@@ -93,7 +98,7 @@ public class VehicleRentingSystem {
         Owner o5 = new Owner(5, "Madlin", "Leaman", Gender.MALE, o5birthDate, "6851478520", "mleaman3@adobe.com",
                 "mleaman3", "lMMMbM3OZu0F", "Christiansen", "9848129", "imdb.com", null);
 
-
+         //Car Object
         Car ca1 = new Car("Z5K39Z0W76366K354", "DX 4dr Sedan", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
                 4, "Diesel", 100, 5, "SUV", "Black");
 
@@ -109,7 +114,7 @@ public class VehicleRentingSystem {
         Car ca5 = new Car("6V035N1185A022427", "4dr Sedan w/Technology Package (3.5L 6cyl 6A)", "Toyoto", Boolean.FALSE, "Padraig", Boolean.FALSE, "Phenix",
                 8, "Diesel", 100, 5, "Minivan", "Black");
 
-
+      //MotorCycle Object
         MotorCycle m1 = new MotorCycle("V99JP7L7808854296", "4dr Crew Cab 4WD SB w/2HY (6.0L 8cyl gas/electric hybrid 4A)", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
                 "Bella", 2, "Electric", 50, 1, 25, 12);
 
@@ -125,7 +130,7 @@ public class VehicleRentingSystem {
         MotorCycle m5 = new MotorCycle("R895E663184691870", "S 4dr Sedan (4.8L 8cyl 7AM)", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
                 "Chris", 2, "Petrol", 50, 1, 65, 32);
 
-
+        //Bus Object
         Bus b1 = new Bus("5S579939423J74119", "xDrive30i 4dr SUV AWD (3.0L 6cyl 6M)", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
                 12, "Diesel", 250, 7, "Volvo", Boolean.FALSE, Boolean.TRUE);
 
@@ -142,7 +147,7 @@ public class VehicleRentingSystem {
                 8, "Petrol", 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
 
 
-
+         //VehicleRent Object
         LocalDate vr1startDate = LocalDate.of(2005,01,13);
         LocalDate vr1endDate = LocalDate.of(2016,12,25);
         VehicleRent vr1 = new VehicleRent(vr1startDate, vr1endDate, 5, "4K0845277599C59LB", 70);

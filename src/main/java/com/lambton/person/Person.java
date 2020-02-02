@@ -1,4 +1,5 @@
 package com.lambton.person;
+
 import com.lambton.IDisplay;
 
 import java.time.LocalDate;
@@ -6,18 +7,12 @@ import java.time.Period;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public enum Gender
-{
-    MALE,
-    FEMALE,
-    OTHERS
-}
+public abstract class Person  implements IDisplay {
 
- public abstract class Person implements IDisplay {
     protected int id;
     protected String firstName;
     protected  String lastName;
-    protected Gender gender;
+     protected Gender gender;
     protected LocalDate birthDate;
     protected String mobileNumber;
     protected String emailID;
@@ -30,7 +25,7 @@ public enum Gender
          this.id = id;
          this.firstName = firstName;
          this.lastName = lastName;
-         this.gender = gender;
+        this.gender = gender;
          this.birthDate = birthDate;
          this.mobileNumber = mobileNumber;
          this.emailID = emailID;
@@ -65,6 +60,8 @@ public enum Gender
     public void setGender(Gender gender) {
         this.gender = gender;
     }
+
+
     public LocalDate getBirthDate() {
         return birthDate;
     }

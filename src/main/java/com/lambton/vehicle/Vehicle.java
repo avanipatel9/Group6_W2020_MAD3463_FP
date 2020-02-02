@@ -13,7 +13,7 @@ package com.lambton.vehicle;
     int ratePerDay;
     double ratePerKM;
 
-    public Vehicle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM) {
+    public Vehicle() {
         this.vehicleIdNumber = vehicleIdNumber;
         this.vehicleInfo = vehicleInfo;
         this.manufacturerName = manufacturerName;
@@ -100,8 +100,9 @@ package com.lambton.vehicle;
         return ratePerDay;
     }
 
-    public void setRatePerDay(int ratePerDay) {
+    public int setRatePerDay(int ratePerDay) {
         this.ratePerDay = ratePerDay;
+        return ratePerDay;
     }
 
     public double getRatePerKM() {
