@@ -94,52 +94,74 @@ public class VehicleRentingSystem {
                 "mleaman3", "lMMMbM3OZu0F", "Christiansen", "9848129", "imdb.com", null);
 
 
-        Car ca1 = new Car("11", "DX 4dr Sedan", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
+        Car ca1 = new Car("Z5K39Z0W76366K354", "DX 4dr Sedan", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
                 4, "Diesel", 100, 5, "SUV", "Black");
 
-        Car ca2 = new Car("12", "Limited 4dr SUV (4.7L 8cyl 5A)", "Suzuki", Boolean.FALSE, "Alford", Boolean.TRUE, "Ben",
+        Car ca2 = new Car("6V035N1185A022427", "Limited 4dr SUV (4.7L 8cyl 5A)", "Suzuki", Boolean.FALSE, "Alford", Boolean.TRUE, "Ben",
                 6, "Diesel", 100, 5, "Sedan", "Gray");
 
-        Car ca3 = new Car("13", "SEL 4dr Sedan (3.0L 6cyl 4A)", "Honda", Boolean.TRUE, "Gusty", Boolean.TRUE, "William",
+        Car ca3 = new Car("1V461X50812V17645", "SEL 4dr Sedan (3.0L 6cyl 4A)", "Honda", Boolean.TRUE, "Gusty", Boolean.TRUE, "William",
                 2, "Electric", 100, 5, "Compact", "White");
 
-        Car ca4 = new Car("14", "4dr SUV AWD (2.5L 4cyl gas/electric hybrid CVT)", "BMW", Boolean.TRUE, "Alford", Boolean.TRUE, "Edward",
+        Car ca4 = new Car("4K0845277599C59LB", "4dr SUV AWD (2.5L 4cyl gas/electric hybrid CVT)", "BMW", Boolean.TRUE, "Alford", Boolean.TRUE, "Edward",
                 4, "Petrol", 100, 5, "Luxury", "Red");
 
-        Car ca5 = new Car("15", "4dr Sedan w/Technology Package (3.5L 6cyl 6A)", "Toyoto", Boolean.FALSE, "Padraig", Boolean.FALSE, "Phenix",
+        Car ca5 = new Car("6V035N1185A022427", "4dr Sedan w/Technology Package (3.5L 6cyl 6A)", "Toyoto", Boolean.FALSE, "Padraig", Boolean.FALSE, "Phenix",
                 8, "Diesel", 100, 5, "Minivan", "Black");
 
 
-        MotorCycle m1 = new MotorCycle("21", "4dr Crew Cab 4WD SB w/2HY (6.0L 8cyl gas/electric hybrid 4A)", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
+        MotorCycle m1 = new MotorCycle("V99JP7L7808854296", "4dr Crew Cab 4WD SB w/2HY (6.0L 8cyl gas/electric hybrid 4A)", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
                 "Bella", 2, "Electric", 50, 1, 25, 12);
 
-        MotorCycle m2 = new MotorCycle("22", "Work Truck 2dr Regular Cab 8 ft. LB (4.3L 6cyl 4A)", "Honda ", Boolean.TRUE, "Jacob", Boolean.TRUE,
+        MotorCycle m2 = new MotorCycle("4XZ2M7U06Z329433A", "Work Truck 2dr Regular Cab 8 ft. LB (4.3L 6cyl 4A)", "Honda ", Boolean.TRUE, "Jacob", Boolean.TRUE,
                 "Benny", 2, "Petrol", 50, 1, 40, 20);
 
-        MotorCycle m3 = new MotorCycle("23", "s Grand Touring 4dr SUV (3.0L 6cyl 6A)", "Ducati", Boolean.FALSE, "Liam", Boolean.TRUE,
+        MotorCycle m3 = new MotorCycle("8H6S28DT397218808", "s Grand Touring 4dr SUV (3.0L 6cyl 6A)", "Ducati", Boolean.FALSE, "Liam", Boolean.TRUE,
                 "Keith", 2, "Electric", 50, 1, 55, 30);
 
-        MotorCycle m4 = new MotorCycle("24", "LT 4dr Crew Cab 4WD SB (3.7L 5cyl 4A)", "Harley-Davidson", Boolean.TRUE, "Felix", Boolean.TRUE,
+        MotorCycle m4 = new MotorCycle("6YV915045UG755121", "LT 4dr Crew Cab 4WD SB (3.7L 5cyl 4A)", "Harley-Davidson", Boolean.TRUE, "Felix", Boolean.TRUE,
                 "Christ", 2, "Petrol", 50, 1, 75, 40);
 
-        MotorCycle m5 = new MotorCycle("25", "S 4dr Sedan (4.8L 8cyl 7AM)", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
+        MotorCycle m5 = new MotorCycle("R895E663184691870", "S 4dr Sedan (4.8L 8cyl 7AM)", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
                 "Chris", 2, "Petrol", 50, 1, 65, 32);
 
 
-        Bus b1 = new Bus("101", "xDrive30i 4dr SUV AWD (3.0L 6cyl 6M)", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
+        Bus b1 = new Bus("5S579939423J74119", "xDrive30i 4dr SUV AWD (3.0L 6cyl 6M)", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
                 12, "Diesel", 250, 7, "Volvo", Boolean.FALSE, Boolean.TRUE);
 
-        Bus b2 = new Bus("102", "Laramie 4dr Club Cab SB (3.7L 6cyl 4A)", "Noha", Boolean.TRUE, "Theo", Boolean.FALSE, "Antonie",
-                14, "Diesel", 250, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
+        Bus b2 = new Bus("K14G7289138870436", "Laramie 4dr Club Cab SB (3.7L 6cyl 4A)", "Noha", Boolean.TRUE, "Theo", Boolean.FALSE, "Antonie",
+                14, "Diesel", 250, 7, "Bus", Boolean.TRUE, Boolean.TRUE);
 
-        Bus b3 = new Bus("103", "S 4dr SUV AWD (2.5L 4cyl CVT)", "Oliver", Boolean.FALSE, "Nolam", Boolean.TRUE, "Louis",
+        Bus b3 = new Bus("G9416715255045385", "S 4dr SUV AWD (2.5L 4cyl CVT)", "Oliver", Boolean.FALSE, "Nolam", Boolean.TRUE, "Louis",
                 8, "Petrol", 250, 7, "MiniBus", Boolean.FALSE, Boolean.FALSE);
 
-        Bus b4 = new Bus("104", "Sport 4dr SUV 4WD (3.5L 6cyl 5A)", "Charles", Boolean.TRUE, "Andrew", Boolean.TRUE, "Lucas",
-                12, "Diesel", 250, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
+        Bus b4 = new Bus("4XZ2M7U06Z329433A", "Sport 4dr SUV 4WD (3.5L 6cyl 5A)", "Charles", Boolean.TRUE, "Andrew", Boolean.TRUE, "Lucas",
+                12, "Diesel", 250, 7, "Coach", Boolean.TRUE, Boolean.TRUE);
 
-        Bus b5 = new Bus("105", "2dr Regular Cab LB (4.0L 6cyl 6M)", "Olivia", Boolean.TRUE, "Mathaes", Boolean.TRUE, "Justin",
+        Bus b5 = new Bus("V99JP7L7808854296", "2dr Regular Cab LB (4.0L 6cyl 6M)", "Olivia", Boolean.TRUE, "Mathaes", Boolean.TRUE, "Justin",
                 8, "Petrol", 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
+
+
+
+        LocalDate vr1startDate = LocalDate.of(2005,01,13);
+        LocalDate vr1endDate = LocalDate.of(2016,12,25);
+        VehicleRent vr1 = new VehicleRent(vr1startDate, vr1endDate, 5, "4K0845277599C59LB", 70);
+
+        LocalDate vr2startDate = LocalDate.of(2010,11,23);
+        LocalDate vr2endDate = LocalDate.of(2019,10,30);
+        VehicleRent vr2 = new VehicleRent(vr1startDate, vr1endDate, 3, "K488863SY780C912U", 50);
+
+        LocalDate vr3startDate = LocalDate.of(2014,10,21);
+        LocalDate vr3endDate = LocalDate.of(2016,02,25);
+        VehicleRent vr3 = new VehicleRent(vr1startDate, vr1endDate, 2, "1V461X50812V17645", 20);
+
+        LocalDate vr4startDate = LocalDate.of(2015,10,05);
+        LocalDate vr4endDate = LocalDate.of(2019,12,15);
+        VehicleRent vr4 = new VehicleRent(vr1startDate, vr1endDate, 1, "7BK245B52S009G251", 15);
+
+        LocalDate vr5startDate = LocalDate.of(2003,11,04);
+        LocalDate vr5endDate = LocalDate.of(2009,11,28);
+        VehicleRent vr5 = new VehicleRent(vr1startDate, vr1endDate, 8, "Z5K39Z0W76366K354", 90);
 
 
     }

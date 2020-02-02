@@ -17,7 +17,11 @@ public class VehicleRent
     private static volatile VehicleRent vVehicleRent = new VehicleRent();
 
     //private constructor.
-    private VehicleRent(){}
+    public VehicleRent(){}
+
+    public VehicleRent(LocalDate vr1startDate, LocalDate vr1endDate, int noOfDays, String vehicleId, int noOfKmDrived) {
+
+    }
 
     public static VehicleRent getInstance() {
         return vVehicleRent;
