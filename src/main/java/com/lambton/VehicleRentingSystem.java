@@ -42,13 +42,13 @@ public class VehicleRentingSystem {
 
         LocalDate c4birthDate = LocalDate.of(1990,11,16);
         Customer c4 = new Customer(4,"Aubrie", "Clucas", Gender.MALE, c4birthDate,
-                "6478587419", "Christ@gmail.com", "Christiana_Roger", "xaY32@tyu",
-                "B143,Mornington Road","Scarborough");
+                "8795514792", "Aurbie@gmail.com", "Ruby_12", "tre5TY@tyu",
+                "6488 Bellgrove Plaza","Okinawa ");
 
         LocalDate c5birthDate = LocalDate.of(1986,07,19);
-        Customer c5 = new Customer(5,"Christiana", "Roger", Gender.FEMALE, c5birthDate,
-                "6478587419", "Christ@gmail.com", "Christiana_Roger", "xaY32@tyu",
-                "B143,Mornington Road","Scarborough");
+        Customer c5 = new Customer(5,"Lorelei ", "Anshell", Gender.FEMALE, c5birthDate,
+                "2576690158", "lanshell1@reverbnation.com", "lanshell1", "L7ZvtX5wJN",
+                "34 Fuller Lane","Novorossiysk");
 
     }
 }
