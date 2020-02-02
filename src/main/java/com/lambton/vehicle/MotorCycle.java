@@ -29,6 +29,6 @@ public class MotorCycle extends Vehicle
 
     @Override
     public void print() {
-        
+
     }
 }

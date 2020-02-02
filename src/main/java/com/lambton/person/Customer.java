@@ -34,6 +34,14 @@ public class Customer extends Person
         this.city = city;
     }
 
+    public ArrayList<VehicleRent> getVehicleRents() {
+        return vehicleRents;
+    }
+
+    public void setVehicleRents(ArrayList<VehicleRent> vehicleRents) {
+        this.vehicleRents = vehicleRents;
+    }
+
     @Override
     public void print()
     {
