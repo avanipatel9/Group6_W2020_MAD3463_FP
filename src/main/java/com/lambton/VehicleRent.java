@@ -1,6 +1,7 @@
 package com.lambton;
 import com.lambton.vehicle.Vehicle;
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 
 public class VehicleRent
@@ -8,7 +9,7 @@ public class VehicleRent
     LocalDate rentStartDate;
     LocalDate rentEndDate;
     int totalDaysOfRent;
-    ArrayList<Vehicle> vehicles;
+    Vehicle vehicle;
     double noOfKmDerived;
     double totalBillToPay;
 
@@ -54,8 +55,8 @@ public class VehicleRent
 
     public  int rentInNoOfDays() throws ArithmeticException
     {
-
-        return 0;
+        totalDaysOfRent = (Period.between(rentStartDate,rentEndDate).getYears()) * vehicle.getRatePerDay();
+        return totalDaysOfRent;
     }
 
 
