@@ -10,13 +10,12 @@ public class Customer extends Person
     private String city;
     ArrayList<VehicleRent> vehicleRents;
 
-    public Customer(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String address, String city)
-    //ArrayList<VehicleRent> vehicleRents)
+    public Customer(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String address, String city, ArrayList<VehicleRent> vehicleRents)
     {
         super(id, firstName, lastName, gender, birthDate, mobileNumber, emailID, userName, password);
         this.address = address;
         this.city = city;
-        //this.vehicleRents = vehicleRents;
+        this.vehicleRents = vehicleRents;
     }
 
     public String getAddress() {
