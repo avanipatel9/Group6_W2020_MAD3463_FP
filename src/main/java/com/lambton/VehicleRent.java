@@ -51,6 +51,16 @@ public class VehicleRent
     public double getTotalBillToPay() {
         return totalBillToPay;
     }
+
+    public  int rentInNoOfDays() throws ArithmeticException
+    {
+
+        return 0;
+    }
+
+
 }
+
+
 
 
