@@ -1,8 +1,5 @@
 package com.lambton;
-import com.lambton.person.Customer;
-import com.lambton.person.Driver;
-import com.lambton.person.Gender;
-import com.lambton.person.Owner;
+import com.lambton.person.*;
 import com.lambton.vehicle.Bus;
 import com.lambton.vehicle.Car;
 import com.lambton.vehicle.MotorCycle;
@@ -97,54 +94,52 @@ public class VehicleRentingSystem {
                 "mleaman3", "lMMMbM3OZu0F", "Christiansen", "9848129", "imdb.com", null);
 
 
-        Car ca1 = new Car("11", "", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
+        Car ca1 = new Car("11", "DX 4dr Sedan", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
                 4, "Diesel", 100, 5, "SUV", "Black");
 
-        Car ca2 = new Car("12", "", "Suzuki", Boolean.FALSE, "Alford", Boolean.TRUE, "Ben",
-                6, "Diesel", 200, 10, "Sedan", "Gray");
+        Car ca2 = new Car("12", "Limited 4dr SUV (4.7L 8cyl 5A)", "Suzuki", Boolean.FALSE, "Alford", Boolean.TRUE, "Ben",
+                6, "Diesel", 100, 5, "Sedan", "Gray");
 
-        Car ca3 = new Car("13", "", "Honda", Boolean.TRUE, "Gusty", Boolean.TRUE, "William",
-                2, "Electric", 50, 5, "Compact", "White");
+        Car ca3 = new Car("13", "SEL 4dr Sedan (3.0L 6cyl 4A)", "Honda", Boolean.TRUE, "Gusty", Boolean.TRUE, "William",
+                2, "Electric", 100, 5, "Compact", "White");
 
-        Car ca4 = new Car("14", "", "BMW", Boolean.TRUE, "Alford", Boolean.TRUE, "Edward",
-                4, "Petrol", 250, 15, "Luxury", "Red");
+        Car ca4 = new Car("14", "4dr SUV AWD (2.5L 4cyl gas/electric hybrid CVT)", "BMW", Boolean.TRUE, "Alford", Boolean.TRUE, "Edward",
+                4, "Petrol", 100, 5, "Luxury", "Red");
 
-        Car ca5 = new Car("15", "", "Toyoto", Boolean.FALSE, "Padraig", Boolean.FALSE, "Phenix",
-                8, "Diesel", 350, 20, "Minivan", "Black");
+        Car ca5 = new Car("15", "4dr Sedan w/Technology Package (3.5L 6cyl 6A)", "Toyoto", Boolean.FALSE, "Padraig", Boolean.FALSE, "Phenix",
+                8, "Diesel", 100, 5, "Minivan", "Black");
 
 
-        MotorCycle m1 = new MotorCycle("21", "", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
+        MotorCycle m1 = new MotorCycle("21", "4dr Crew Cab 4WD SB w/2HY (6.0L 8cyl gas/electric hybrid 4A)", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
                 "Bella", 2, "Electric", 50, 1, 25, 12);
 
-        MotorCycle m2 = new MotorCycle("22", "", "Honda ", Boolean.TRUE, "Jacob", Boolean.TRUE,
-                "Benny", 2, "Petrol", 50, 10, 40, 20);
+        MotorCycle m2 = new MotorCycle("22", "Work Truck 2dr Regular Cab 8 ft. LB (4.3L 6cyl 4A)", "Honda ", Boolean.TRUE, "Jacob", Boolean.TRUE,
+                "Benny", 2, "Petrol", 50, 1, 40, 20);
 
-        MotorCycle m3 = new MotorCycle("23", "", "Ducati", Boolean.FALSE, "Liam", Boolean.TRUE,
-                "Keith", 2, "Electric", 45, 15, 55, 30);
+        MotorCycle m3 = new MotorCycle("23", "s Grand Touring 4dr SUV (3.0L 6cyl 6A)", "Ducati", Boolean.FALSE, "Liam", Boolean.TRUE,
+                "Keith", 2, "Electric", 50, 1, 55, 30);
 
-        MotorCycle m4 = new MotorCycle("24", "", "Harley-Davidson", Boolean.TRUE, "Felix", Boolean.TRUE,
+        MotorCycle m4 = new MotorCycle("24", "LT 4dr Crew Cab 4WD SB (3.7L 5cyl 4A)", "Harley-Davidson", Boolean.TRUE, "Felix", Boolean.TRUE,
                 "Christ", 2, "Petrol", 50, 1, 75, 40);
 
-        MotorCycle m5 = new MotorCycle("25", "", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
-                "Chris", 2, "Petrol", 50, 20, 65, 32);
+        MotorCycle m5 = new MotorCycle("25", "S 4dr Sedan (4.8L 8cyl 7AM)", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
+                "Chris", 2, "Petrol", 50, 1, 65, 32);
 
 
-        Bus b1 = new Bus("101", "", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
+        Bus b1 = new Bus("101", "xDrive30i 4dr SUV AWD (3.0L 6cyl 6M)", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
                 12, "Diesel", 250, 7, "Volvo", Boolean.FALSE, Boolean.TRUE);
 
-        Bus b2 = new Bus("102", "", "Noha", Boolean.TRUE, "Theo", Boolean.FALSE, "Antonie",
-                14, "Diesel", 150, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
+        Bus b2 = new Bus("102", "Laramie 4dr Club Cab SB (3.7L 6cyl 4A)", "Noha", Boolean.TRUE, "Theo", Boolean.FALSE, "Antonie",
+                14, "Diesel", 250, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
 
-        Bus b3 = new Bus("103", "", "Oliver", Boolean.FALSE, "Nolam", Boolean.TRUE, "Louis",
-                8, "Petrol", 150, 7, "MiniBus", Boolean.FALSE, Boolean.FALSE);
+        Bus b3 = new Bus("103", "S 4dr SUV AWD (2.5L 4cyl CVT)", "Oliver", Boolean.FALSE, "Nolam", Boolean.TRUE, "Louis",
+                8, "Petrol", 250, 7, "MiniBus", Boolean.FALSE, Boolean.FALSE);
 
-        Bus b4 = new Bus("104", "", "Charles", Boolean.TRUE, "Andrew", Boolean.TRUE, "Lucas",
-                12, "Diesel", 350, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
+        Bus b4 = new Bus("104", "Sport 4dr SUV 4WD (3.5L 6cyl 5A)", "Charles", Boolean.TRUE, "Andrew", Boolean.TRUE, "Lucas",
+                12, "Diesel", 250, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
 
-        Bus b5 = new Bus("105", "", "Olivia", Boolean.TRUE, "Mathaes", Boolean.TRUE, "Justin",
-                8, "Petrol", 150, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
-
-
+        Bus b5 = new Bus("105", "2dr Regular Cab LB (4.0L 6cyl 6M)", "Olivia", Boolean.TRUE, "Mathaes", Boolean.TRUE, "Justin",
+                8, "Petrol", 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
 
 
     }
