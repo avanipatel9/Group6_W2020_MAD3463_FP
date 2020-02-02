@@ -4,6 +4,7 @@ import com.lambton.person.Driver;
 import com.lambton.person.Gender;
 import com.lambton.person.Owner;
 import com.lambton.vehicle.Car;
+import com.lambton.vehicle.MotorCycle;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -111,9 +112,20 @@ public class VehicleRentingSystem {
                 8, "Diesel", 350, 20, "Minivan", "Black");
 
 
+        MotorCycle m1 = new MotorCycle("21", "", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
+                "Bella", 2, "Electric", 50, 1, 25, 12);
 
+        MotorCycle m2 = new MotorCycle("22", "", "Honda ", Boolean.TRUE, "Jacob", Boolean.TRUE,
+                "Benny", 2, "Petrol", 50, 10, 40, 20);
 
+        MotorCycle m3 = new MotorCycle("23", "", "Ducati", Boolean.FALSE, "Liam", Boolean.TRUE,
+                "Keith", 2, "Electric", 45, 15, 55, 30);
 
+        MotorCycle m4 = new MotorCycle("24", "", "Harley-Davidson", Boolean.TRUE, "Felix", Boolean.TRUE,
+                "Christ", 2, "Petrol", 50, 1, 75, 40);
+
+        MotorCycle m5 = new MotorCycle("25", "", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
+                "Chris", 2, "Petrol", 50, 20, 65, 32);
 
 
 
