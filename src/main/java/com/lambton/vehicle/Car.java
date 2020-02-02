@@ -40,6 +40,8 @@ public class Car extends Vehicle
         System.out.println("Fuel Type : " + super.fuelType);
         System.out.println("Rate Per Day : " + getRatePerDay());
         System.out.println("Rate Per Kilometer : " + getRatePerKM());
+        System.out.println("Car Type : " + carType);
+        System.out.println("Car Colour : " + carColor);
 
     }
 }
