@@ -3,8 +3,8 @@ package com.lambton.vehicle;
 public class Bus extends Vehicle
 {
     String busType;
-    boolean serviceAvailability;
-    boolean wifiAvailability;
+    Boolean serviceAvailability;
+    Boolean wifiAvailability;
 
     public Bus(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String busType, boolean serviceAvailability, boolean wifiAvailability) {
         super(vehicleIdNumber, vehicleInfo, manufacturerName, isSelfDrive, driver, isInsured, insuranceProviderName, numberOfSeats, fuelType, ratePerDay, ratePerKM);

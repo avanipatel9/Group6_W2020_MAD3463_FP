@@ -3,6 +3,7 @@ import com.lambton.person.Customer;
 import com.lambton.person.Driver;
 import com.lambton.person.Gender;
 import com.lambton.person.Owner;
+import com.lambton.vehicle.Bus;
 import com.lambton.vehicle.Car;
 import com.lambton.vehicle.MotorCycle;
 
@@ -126,6 +127,22 @@ public class VehicleRentingSystem {
 
         MotorCycle m5 = new MotorCycle("25", "", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
                 "Chris", 2, "Petrol", 50, 20, 65, 32);
+
+
+        Bus b1 = new Bus("101", "", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
+                12, "Diesel", 250, 7, "Volvo", Boolean.FALSE, Boolean.TRUE);
+
+        Bus b2 = new Bus("102", "", "Noha", Boolean.TRUE, "Theo", Boolean.FALSE, "Antonie",
+                14, "Diesel", 150, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
+
+        Bus b3 = new Bus("103", "", "Oliver", Boolean.FALSE, "Nolam", Boolean.TRUE, "Louis",
+                8, "Petrol", 150, 7, "MiniBus", Boolean.FALSE, Boolean.FALSE);
+
+        Bus b4 = new Bus("104", "", "Charles", Boolean.TRUE, "Andrew", Boolean.TRUE, "Lucas",
+                12, "Diesel", 350, 7, "Volvo", Boolean.TRUE, Boolean.TRUE);
+
+        Bus b5 = new Bus("105", "", "Olivia", Boolean.TRUE, "Mathaes", Boolean.TRUE, "Justin",
+                8, "Petrol", 150, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
 
 
 
