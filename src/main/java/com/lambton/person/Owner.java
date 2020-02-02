@@ -44,6 +44,14 @@ public class Owner extends Person
         this.website = website;
     }
 
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
+    public void setVehicles(List<Vehicle> vehicles) {
+        this.vehicles = vehicles;
+    }
+
     @Override
     public void print()
     {
