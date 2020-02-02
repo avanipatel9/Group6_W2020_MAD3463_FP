@@ -59,6 +59,11 @@ public class VehicleRent
         return totalDaysOfRent;
     }
 
+    public double totalBillToPay() throws ArithmeticException
+    {
+        totalBillToPay = totalDaysOfRent + (noOfKmDerived * vehicle.getRatePerKM());
+        return totalBillToPay;
+    }
 
 }
 
