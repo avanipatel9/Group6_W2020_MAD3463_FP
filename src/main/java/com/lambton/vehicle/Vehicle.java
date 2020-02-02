@@ -1,5 +1,8 @@
 package com.lambton.vehicle;
- public abstract class Vehicle
+
+import com.lambton.IDisplay;
+
+public abstract class Vehicle implements IDisplay
 {
     String vehicleIdNumber;
     String vehicleInfo;
