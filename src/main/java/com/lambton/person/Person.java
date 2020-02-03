@@ -19,9 +19,10 @@ public abstract class Person  implements IDisplay {
     protected String userName;
     protected String password;
 
+    public Person() {
+    }
 
-
-     public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
+    public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
          this.id = id;
          this.firstName = firstName;
          this.lastName = lastName;
@@ -136,8 +137,6 @@ public abstract class Person  implements IDisplay {
          System.out.println(matcher.matches());
          return matcher.matches();
      }
-
-
 
 
  }
