@@ -403,6 +403,15 @@ public class VehicleRentingSystem {
     return bus;
   }
 
+  public Double CalculateTotalBill(double baseRate, int kms, double ratePerKm, float noOfDays)
+  {
+    Double basePrice = (double) (baseRate * noOfDays);
+    Double total = (double) (ratePerKm * kms);
+    return basePrice + total;
+
+  }
+
+
 
 
 

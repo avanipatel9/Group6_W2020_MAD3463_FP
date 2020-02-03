@@ -19,7 +19,8 @@ public class VehicleRent
     //private constructor.
     public VehicleRent(){}
 
-    public VehicleRent(LocalDate vr1startDate, LocalDate vr1endDate, int noOfDays, String vehicleId, int noOfKmDrived) {
+    public VehicleRent(LocalDate vr1startDate, LocalDate vr1endDate, int noOfDays, String vehicleId, int noOfKmDrived)
+    {
 
     }
 
