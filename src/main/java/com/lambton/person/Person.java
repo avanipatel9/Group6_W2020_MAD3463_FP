@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  public abstract class Person implements IDisplay {
     protected int id;
     protected String firstName;
-    protected  String lastName;
+    protected String lastName;
     protected String gender;
     protected LocalDate birthDate;
     protected String mobileNumber;
@@ -18,7 +18,8 @@ import java.util.regex.Pattern;
     protected String userName;
     protected String password;
 
-
+     public Person() {
+     }
 
      public Person(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
          this.id = id;
@@ -36,7 +37,11 @@ import java.util.regex.Pattern;
         return id;
     }
 
-    public String getFirstName() {
+     public void setId(int id) {
+         this.id = id;
+     }
+
+     public String getFirstName() {
         return firstName;
     }
 
