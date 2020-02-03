@@ -306,7 +306,7 @@ public class VehicleRentingSystem {
 
   }
 
-
+  //Set Customer Details All Values
   public Customer setCustomerDetails(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber,
                                       String emailID, String userName, String password, String address, String city, ArrayList<VehicleRent> vehicleRents) {
 
