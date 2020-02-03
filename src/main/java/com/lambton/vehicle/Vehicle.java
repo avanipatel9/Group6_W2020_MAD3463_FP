@@ -1,6 +1,13 @@
-package com.lambton;
- abstract class Vehicle
+package com.lambton.vehicle;
+
+import com.lambton.IDisplay;
+
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+
+public abstract class Vehicle implements IDisplay
 {
+    //Vehicle Properties
     String vehicleIdNumber;
     String vehicleInfo;
     String manufacturerName;
@@ -9,14 +16,45 @@ package com.lambton;
     Boolean isInsured;
     String insuranceProviderName;
     int numberOfSeats;
-    String fuelType;
+    FuelType fuelType;
     int ratePerDay;
     double ratePerKM;
+    HashMap<String, String> ratePerKmVehicleTpe = new HashMap<String, String>();
+
+    //Default Constructor
+    public Vehicle() {
+    }
+
+    //Parameterised Constructor
+    public Vehicle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM) {
+        this.vehicleIdNumber = vehicleIdNumber;
+        this.vehicleInfo = vehicleInfo;
+        this.manufacturerName = manufacturerName;
+        this.isSelfDrive = isSelfDrive;
+        this.driver = driver;
+        this.isInsured = isInsured;
+        this.insuranceProviderName = insuranceProviderName;
+        this.numberOfSeats = numberOfSeats;
+        this.fuelType = fuelType;
+        this.ratePerDay = ratePerDay;
+        this.ratePerKM = ratePerKM;
+
+    }
+
+    public HashMap<String, String> getRatePerKmVehicleTpe() {
+        return ratePerKmVehicleTpe;
+    }
+
+    //Implement getter and Setter
+    public void setRatePerKmVehicleTpe(HashMap<String, String> ratePerKmVehicleTpe) {
+        this.ratePerKmVehicleTpe = ratePerKmVehicleTpe;
+    }
+
+
 
     public String getVehicleIdNumber() {
         return vehicleIdNumber;
     }
-
 
     public String getVehicleInfo() {
         return vehicleInfo;
@@ -74,27 +112,28 @@ package com.lambton;
         this.numberOfSeats = numberOfSeats;
     }
 
-    public String getFuelType() {
+    public FuelType getFuelType() {
         return fuelType;
     }
-
-    public void setFuelType(String fuelType) {
+    public void setFuelType(FuelType fuelType) {
         this.fuelType = fuelType;
     }
-
     public int getRatePerDay() {
         return ratePerDay;
     }
 
-    public void setRatePerDay(int ratePerDay) {
+    public int setRatePerDay(int ratePerDay) {
         this.ratePerDay = ratePerDay;
+        return ratePerDay;
     }
-
     public double getRatePerKM() {
         return ratePerKM;
     }
-
     public void setRatePerKM(int ratePerKM) {
         this.ratePerKM = ratePerKM;
+    }
+
+    @Override
+    public void print() throws FileNotFoundException {
     }
 }

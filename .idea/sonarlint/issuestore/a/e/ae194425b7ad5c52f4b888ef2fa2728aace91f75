@@ -1,0 +1,5 @@
+
+Tsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+ž%squid:RedundantThrowsDeclarationCheck<"hRemove the declaration of thrown exception 'java.lang.ArithmeticException' which is a runtime exception.(ÎîåÑÿÿÿÿÿ
+ž%squid:RedundantThrowsDeclarationCheckB"hRemove the declaration of thrown exception 'java.lang.ArithmeticException' which is a runtime exception.(×¨…Èüÿÿÿÿ
+Jsquid:S3077".Remove the "volatile" keyword from this field.(áŠÚýÿÿÿÿ

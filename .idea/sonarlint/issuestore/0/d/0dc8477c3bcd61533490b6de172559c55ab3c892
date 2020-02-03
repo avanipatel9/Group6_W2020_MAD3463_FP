@@ -1,0 +1,4 @@
+
+csquid:UselessImportCheck"3Remove this unused import 'java.util.AbstractList'.(ËÃ€ÿÿÿÿÿ8ƒç”Ë€.
+rsquid:S00116"SRename this field "Vehicles" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÆÕ 8±é¶Ë€.
+Jsquid:S1068",Remove this unused "Vehicles" private field.(îÆÕ 8±é¶Ë€.

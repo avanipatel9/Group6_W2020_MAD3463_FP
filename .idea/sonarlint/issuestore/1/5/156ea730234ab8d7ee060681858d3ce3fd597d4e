@@ -1,0 +1,5 @@
+
+nsquid:S1450…"VRemove the "matcher" field and declare it as a local variable in the relevant methods.(¥½³Ú
+Zsquid:S1226‰"BIntroduce a new variable instead of reusing the parameter "email".(èÕ¥‘
+Lsquid:S1125\")Remove the literal "false" boolean value.(Ã§´öıÿÿÿÿ8–¶Ë€.
+`squid:S00107"AConstructor has 9 parameters, which is greater than 7 authorized.(ºÉ¹¦8–¶Ë€.
