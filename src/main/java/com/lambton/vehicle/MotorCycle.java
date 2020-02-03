@@ -13,8 +13,11 @@ public class MotorCycle extends Vehicle
     }
 
     public MotorCycle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver,
-                      Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, int maxSpeed, float milage)
+                      Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, int maxSpeed, float milage)
     {
+        super(vehicleIdNumber,  vehicleInfo, manufacturerName, isSelfDrive, driver, isInsured, insuranceProviderName,
+                numberOfSeats, fuelType,  ratePerDay, ratePerKM);
+
         this.maxSpeed = maxSpeed;
         milage = milage;
     }

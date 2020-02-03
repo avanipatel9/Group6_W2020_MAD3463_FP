@@ -112,19 +112,19 @@ public class VehicleRentingSystem {
 
 
     MotorCycle m1 = new MotorCycle("V99JP7L7808854296", "4dr Crew Cab 4WD SB w/2HY (6.0L 8cyl gas/electric hybrid 4A)", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
-            "Bella", 2, "Electric", 50, 1, 25, 12);
+            "Bella", 2, FuelType.Electric, 50, 1, 25, 12);
 
     MotorCycle m2 = new MotorCycle("4XZ2M7U06Z329433A", "Work Truck 2dr Regular Cab 8 ft. LB (4.3L 6cyl 4A)", "Honda ", Boolean.TRUE, "Jacob", Boolean.TRUE,
-            "Benny", 2, "Petrol", 50, 1, 40, 20);
+            "Benny", 2, FuelType.Electric, 50, 1, 40, 20);
 
     MotorCycle m3 = new MotorCycle("8H6S28DT397218808", "s Grand Touring 4dr SUV (3.0L 6cyl 6A)", "Ducati", Boolean.FALSE, "Liam", Boolean.TRUE,
-            "Keith", 2, "Electric", 50, 1, 55, 30);
+            "Keith", 2, FuelType.Petrol, 50, 1, 55, 30);
 
     MotorCycle m4 = new MotorCycle("6YV915045UG755121", "LT 4dr Crew Cab 4WD SB (3.7L 5cyl 4A)", "Harley-Davidson", Boolean.TRUE, "Felix", Boolean.TRUE,
-            "Christ", 2, "Petrol", 50, 1, 75, 40);
+            "Christ", 2, FuelType.Diesel, 50, 1, 75, 40);
 
     MotorCycle m5 = new MotorCycle("R895E663184691870", "S 4dr Sedan (4.8L 8cyl 7AM)", "Kawasaki", Boolean.TRUE, "Nathan", Boolean.TRUE,
-            "Chris", 2, "Petrol", 50, 1, 65, 32);
+            "Chris", 2, FuelType.Electric, 50, 1, 65, 32);
 
 
     Bus b1 = new Bus("5S579939423J74119", "xDrive30i 4dr SUV AWD (3.0L 6cyl 6M)", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
