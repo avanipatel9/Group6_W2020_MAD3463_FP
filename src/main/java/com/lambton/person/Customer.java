@@ -46,6 +46,7 @@ public class Customer extends Person
         PrintStream o = new PrintStream(new File("Output.txt"));
         PrintStream console = System.out;
         System.setOut(o);
+        System.out.println("--------------Customer Details-------------");
         System.out.println("Customer First Name : " + super.firstName);
         System.out.println("Customer Last Name : " + super.lastName);
         System.out.println("Gender : " + super.gender);
