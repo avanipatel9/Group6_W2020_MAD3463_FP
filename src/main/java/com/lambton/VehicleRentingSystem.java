@@ -141,6 +141,25 @@ public class VehicleRentingSystem {
               "Chris", 2, "Petrol", 50, 1, 65, 32);
 
 
+      Bus b1 = new Bus("5S579939423J74119", "xDrive30i 4dr SUV AWD (3.0L 6cyl 6M)", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
+              12, "Diesel", 250, 7, "Volvo", Boolean.FALSE, Boolean.TRUE);
+
+      Bus b2 = new Bus("K14G7289138870436", "Laramie 4dr Club Cab SB (3.7L 6cyl 4A)", "Noha", Boolean.TRUE, "Theo", Boolean.FALSE, "Antonie",
+              14, "Diesel", 250, 7, "Bus", Boolean.TRUE, Boolean.TRUE);
+
+      Bus b3 = new Bus("G9416715255045385", "S 4dr SUV AWD (2.5L 4cyl CVT)", "Oliver", Boolean.FALSE, "Nolam", Boolean.TRUE, "Louis",
+              8, "Petrol", 250, 7, "MiniBus", Boolean.FALSE, Boolean.FALSE);
+
+      Bus b4 = new Bus("4XZ2M7U06Z329433A", "Sport 4dr SUV 4WD (3.5L 6cyl 5A)", "Charles", Boolean.TRUE, "Andrew", Boolean.TRUE, "Lucas",
+              12, "Diesel", 250, 7, "Coach", Boolean.TRUE, Boolean.TRUE);
+
+      Bus b5 = new Bus("V99JP7L7808854296", "2dr Regular Cab LB (4.0L 6cyl 6M)", "Olivia", Boolean.TRUE, "Mathaes", Boolean.TRUE, "Justin",
+              8, "Petrol", 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
+
+
+
+
+
 
     }
 
