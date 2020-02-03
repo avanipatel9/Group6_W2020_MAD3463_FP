@@ -42,6 +42,7 @@ public abstract class Person  implements IDisplay
          this.password = password;
      }
 
+//Adding Getter Setter
      public int getId() {
         return id;
     }
