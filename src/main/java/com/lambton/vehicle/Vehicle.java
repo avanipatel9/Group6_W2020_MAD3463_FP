@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 public abstract class Vehicle implements IDisplay
 {
+    //Vehicle Properties
     String vehicleIdNumber;
     String vehicleInfo;
     String manufacturerName;
