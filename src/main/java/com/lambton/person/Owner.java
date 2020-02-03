@@ -80,23 +80,5 @@ public class Owner extends Person
         System.out.println("Website : " + website);
     }
 
-    public void setVehicles(List<Vehicle> o1vehicleList) {
-    }
 
-    public void ownerList(){
-    }
-
-    public void vehicleList(){
-    }
-
-    public void display() {
-    }
-
-    public Object getVehicle() {
-        return null;
-    }
-
-    public Collection<Object> getVehicles() {
-        return null;
-    }
 }
