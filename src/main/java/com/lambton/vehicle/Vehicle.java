@@ -21,6 +21,7 @@ public abstract class Vehicle implements IDisplay
     double ratePerKM;
     HashMap<String, String> ratePerKmVehicleTpe = new HashMap<String, String>();
 
+    //Default Constructor
     public Vehicle() {
     }
 
