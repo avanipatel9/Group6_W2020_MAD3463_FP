@@ -326,7 +326,7 @@ public class VehicleRentingSystem {
 
   }
 
-
+ //Add car
   public Car setCarDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
                            String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, String carType, String carColor) {
     Car car = new Car();
@@ -344,6 +344,7 @@ public class VehicleRentingSystem {
     return car;
   }
 
+  //Add MotorCycle
 
   public MotorCycle setMotorCycleDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver,
                                          Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, int maxSpeed, float milage) {
@@ -362,7 +363,7 @@ public class VehicleRentingSystem {
     return mc;
   }
 
-
+//Add Bus Details
   public Bus setBusDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
                            String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, String busType,
                            boolean serviceAvailability, boolean wifiAvailability) {
@@ -382,6 +383,8 @@ public class VehicleRentingSystem {
     return bus;
   }
 
+
+  //Method to calculate till
   public Double CalculateTotalBill(double baseRate, int kms, double ratePerKm, float noOfDays) {
     Double basePrice = (double) (baseRate * noOfDays);
     Double total = (double) (ratePerKm * kms);
@@ -389,6 +392,7 @@ public class VehicleRentingSystem {
 
   }
 
+  //Method to calculate VehicleID
   public Vehicle getVehicleID(String vehicleId) {
     for (Vehicle vehicle : vehicleList) {
       if (vehicleId.equals(vehicle.getVehicleIdNumber())) {
