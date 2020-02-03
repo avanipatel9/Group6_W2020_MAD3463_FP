@@ -25,6 +25,8 @@ public abstract class Person  implements IDisplay
     protected String password;
     CommonFunctions cf= new CommonFunctions();
 
+
+    //Default Constructor
      public Person() {
      }
     
