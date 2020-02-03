@@ -23,18 +23,17 @@ public class VehicleRentingSystem {
   public VehicleRentingSystem() throws FileNotFoundException {
   }
 
-
+//Main method
   public static void main(String[] args) throws Exception {
 
-
     VehicleRentingSystem vrs = new VehicleRentingSystem();
-
     vrs.addOwner();
     vrs.showOwnerDetails();
     vrs.addCustomer();
     vrs.showCustomerDetails();
   }
 
+  //Add Owner List
   public void addOwner() throws Exception {
 
       LocalDate o1birthDate = LocalDate.of(1992, 11, 12);
@@ -187,7 +186,7 @@ public class VehicleRentingSystem {
 
   }
 
-
+//Add Customer List
   public void addCustomer() {
 
     LocalDate c1birthDate = LocalDate.of(1993, 02, 27);
@@ -263,7 +262,7 @@ public class VehicleRentingSystem {
 
   }
 
-
+   //Set Owner Details all values
   public Owner setOwnerDetails(int id, String firstName, String lastName, String gender, LocalDate birthDate,
                                 String mobileNumber, String emailID, String userName, String password, String companyTitle,
                                 String landLineNumber, String website, List<Vehicle> vehicles) {
@@ -285,6 +284,7 @@ public class VehicleRentingSystem {
 
   }
 
+  //Set Driver Details All Values
 
   public Driver setDriverDetails(int id, String firstName, String lastName, String gender, LocalDate birthDate,
                                  String mobileNumber, String emailID, String userName, String password,
