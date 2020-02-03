@@ -45,9 +45,11 @@ public abstract class Vehicle implements IDisplay
         return ratePerKmVehicleTpe;
     }
 
+    //Implement getter and Setter
     public void setRatePerKmVehicleTpe(HashMap<String, String> ratePerKmVehicleTpe) {
         this.ratePerKmVehicleTpe = ratePerKmVehicleTpe;
     }
+
 
 
     public String getVehicleIdNumber() {
