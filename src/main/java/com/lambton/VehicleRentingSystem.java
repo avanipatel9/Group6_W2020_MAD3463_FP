@@ -10,14 +10,14 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
+//Main class
 public class VehicleRentingSystem {
   private ArrayList<Vehicle> Vehicles;
-
   List<Vehicle> vehicleList = new ArrayList<Vehicle>();
   List<Owner> ownerList = new ArrayList<Owner>();
   List<Customer> customerList = new ArrayList<Customer>();
 
+  //Get output in txt
   PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
 
   public VehicleRentingSystem() throws FileNotFoundException {
@@ -420,7 +420,6 @@ public class VehicleRentingSystem {
       }
     }
   }
-
 
 
     public void showCustomerDetails () throws FileNotFoundException {
