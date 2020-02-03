@@ -402,6 +402,8 @@ public class VehicleRentingSystem {
     return null;
   }
 
+  //Display Owner Details
+
   public void showOwnerDetails() throws FileNotFoundException {
     if (ownerList.size() > 0) {
       System.out.println("***********************************************");
@@ -425,7 +427,7 @@ public class VehicleRentingSystem {
     }
   }
 
-
+  //Display Customer Details
     public void showCustomerDetails () throws FileNotFoundException {
       if (customerList.size() > 0) {
         System.out.println("***********************************************");
