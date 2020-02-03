@@ -11,10 +11,11 @@ public class Driver extends Person
     private boolean isDrivingHistoryCleared;
     private float salary;
 
+
     public Driver() {
     }
 
-    public Driver(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, int drivingLicenceNumber, boolean isDrivingHistoryCleared, float salary) {
+   public Driver(int id, String firstName, String lastName,String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, int drivingLicenceNumber, boolean isDrivingHistoryCleared, float salary) {
         super(id, firstName, lastName,gender, birthDate, mobileNumber, emailID, userName, password);
         this.drivingLicenceNumber = drivingLicenceNumber;
         this.isDrivingHistoryCleared = isDrivingHistoryCleared;

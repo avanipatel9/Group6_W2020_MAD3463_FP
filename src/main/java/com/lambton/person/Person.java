@@ -5,22 +5,23 @@ import java.time.Period;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class Person  implements IDisplay {
 
+public abstract class Person  implements IDisplay {
     protected int id;
     protected String firstName;
-    protected  String lastName;
-     protected Gender gender;
+    protected String lastName;
+    protected String gender;
     protected LocalDate birthDate;
     protected String mobileNumber;
     protected String emailID;
     protected String userName;
     protected String password;
 
-    public Person() {
-    }
 
-    public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
+     public Person() {
+     }
+
+     public Person(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
          this.id = id;
          this.firstName = firstName;
          this.lastName = lastName;
@@ -36,7 +37,11 @@ public abstract class Person  implements IDisplay {
         return id;
     }
 
-    public String getFirstName() {
+     public void setId(int id) {
+         this.id = id;
+     }
+
+     public String getFirstName() {
         return firstName;
     }
 
@@ -52,11 +57,11 @@ public abstract class Person  implements IDisplay {
         this.lastName = lastName;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
