@@ -33,6 +33,7 @@ public class Customer extends Person
         this.vehicleRents = vehicleRents;
     }
 
+    //Getter Setter
     public String getAddress() {
         return address;
     }
