@@ -3,6 +3,7 @@ import com.lambton.constants.Constants;
 import com.lambton.person.*;
 import com.lambton.utilities.Blowfish;
 import com.lambton.vehicle.*;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
@@ -11,6 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 //Main class
@@ -34,6 +36,13 @@ public class VehicleRentingSystem {
     Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH));
 
     System.out.println("Workbook has " + workbook.getNumberOfSheets() + " Sheets : ");
+
+    Iterator<Sheet> sheetIterator = workbook.sheetIterator();
+    System.out.println("Retrieving Sheets using Iterator");
+    while (sheetIterator.hasNext()) {
+      Sheet sheet = sheetIterator.next();
+      System.out.println("=> " + sheet.getSheetName());
+    }
 
     VehicleRentingSystem vrs = new VehicleRentingSystem();
     vrs.addOwner();
