@@ -1,5 +1,9 @@
 package com.lambton.vehicle;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class MotorCycle extends Vehicle
 {
     int maxSpeed;
@@ -25,5 +29,26 @@ public class MotorCycle extends Vehicle
 
     public void setMilage(float milage) {
         Milage = milage;
+    }
+
+    //Limit maxSpeed function
+    public int maxSpeedAllowedByAge(int age)
+    {
+        if(age<20)
+        {
+            maxSpeed= 100;
+        }
+        else
+            maxSpeed=150;
+        return  maxSpeed;
+    }
+    public void print() throws FileNotFoundException {
+        PrintStream o = new PrintStream(new File("Output.txt"));
+        PrintStream console = System.out;
+        System.setOut(o);
+        System.out.println("---------MotorCycle Details--------------");
+        System.out.println("Max Speed Allowed: " +maxSpeedAllowedByAge(19)+"km/hr");
+        System.out.println("Max Speed Allowed: " +maxSpeedAllowedByAge(36)+"km/hr");
+        System.out.println("Milage: " +Milage);
     }
 }
