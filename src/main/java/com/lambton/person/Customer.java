@@ -19,7 +19,7 @@ public class Customer extends Person
     private String city;
     ArrayList<VehicleRent> vehicleRents;
 
-//
+//Default Constructor
     
     public Customer() {
     }
