@@ -1,7 +1,5 @@
 package com.lambton.person;
-
 import com.lambton.IDisplay;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.regex.Matcher;

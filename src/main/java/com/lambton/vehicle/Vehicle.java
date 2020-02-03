@@ -12,7 +12,7 @@ public abstract class Vehicle implements IDisplay
     Boolean isInsured;
     String insuranceProviderName;
     int numberOfSeats;
-    String fuelType;
+    FuelType fuelType;
     int ratePerDay;
     double ratePerKM;
 
@@ -77,11 +77,11 @@ public abstract class Vehicle implements IDisplay
         this.numberOfSeats = numberOfSeats;
     }
 
-    public String getFuelType() {
+    public FuelType getFuelType() {
         return fuelType;
     }
 
-    public void setFuelType(String fuelType) {
+    public void setFuelType(FuelType fuelType) {
         this.fuelType = fuelType;
     }
 

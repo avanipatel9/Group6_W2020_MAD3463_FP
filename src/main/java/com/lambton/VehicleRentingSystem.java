@@ -3,12 +3,10 @@ import com.lambton.person.*;
 import com.lambton.vehicle.Bus;
 import com.lambton.vehicle.Car;
 import com.lambton.vehicle.MotorCycle;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.time.LocalDate;
-
 
 public class VehicleRentingSystem {
     public static void main(String[] args) throws FileNotFoundException {
