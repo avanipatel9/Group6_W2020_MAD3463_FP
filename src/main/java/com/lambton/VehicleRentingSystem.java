@@ -376,11 +376,35 @@ public class VehicleRentingSystem {
     mc.setInsuranceProviderName(insuranceProviderName);
     mc.setFuelType(fuelType);
     mc.setRatePerDay(ratePerDay);
-    mc.setRatePerKM(ratePerKM);
+    mc.setRatePerKM((int) ratePerKM);
     mc.setMaxSpeed(maxSpeed);
     mc.setMilage(milage);
     return mc;
   }
+
+
+  public Bus setBusDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
+                           String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String busType,
+                           boolean serviceAvailability, boolean wifiAvailability)
+  {
+    Bus bus = new Bus();
+    bus.setVehicleInfo(vehicleInfo);
+    bus.setSelfDrive(isSelfDrive);
+    bus.setManufacturerName(manufacturerName);
+    bus.setInsured(isInsured);
+    bus.setNumberOfSeats(numberOfSeats);
+    bus.setInsuranceProviderName(insuranceProviderName);
+    bus.setFuelType(fuelType);
+    bus.setRatePerDay(ratePerDay);
+    bus.setRatePerKM((int) ratePerKM);
+    bus.setBusType(busType);
+    bus.setWifiAvailability(wifiAvailability);
+    bus.setServiceAvailability(serviceAvailability);
+    return bus;
+  }
+
+
+
 
 }
 
