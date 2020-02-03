@@ -3,28 +3,127 @@ import com.lambton.person.*;
 import com.lambton.vehicle.Bus;
 import com.lambton.vehicle.Car;
 import com.lambton.vehicle.MotorCycle;
+import com.lambton.vehicle.Vehicle;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.time.LocalDate;
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class VehicleRentingSystem {
-    public static void main(String[] args) throws FileNotFoundException {
-        // Creating a File object that represents the disk file.
-       PrintStream o = new PrintStream(new File("Output.txt"));
-        // Store current System.out before assigning a new value
-        PrintStream console = System.out;
-        // Assign o to output stream
-        System.setOut(o);
-        System.out.println("This will be written to the text file");
-        System.out.println("This will be written to the text file 2 ");
-        System.out.println("This will be written to the text file 3 ");
-        // Use stored value for output stream
-        System.setOut(console);
-        System.out.println("This will be written on the console!");
+  private ArrayList<Vehicle> Vehicles;
 
+  public static void main(String[] args) throws FileNotFoundException {
+      // Creating a File object that represents the disk file.
+      PrintStream o = new PrintStream(new File("Output.txt"));
+      // Store current System.out before assigning a new value
+      PrintStream console = System.out;
+      // Assign o to output stream
+      System.setOut(o);
+      System.out.println("This will be written to the text file");
+      System.out.println("This will be written to the text file 2 ");
+      System.out.println("This will be written to the text file 3 ");
+      // Use stored value for output stream
+      System.setOut(console);
+      System.out.println("This will be written on the console!");
+
+
+    List<Vehicle> vehicleList = new ArrayList<Vehicle>();
+    List<Owner> ownerList = new ArrayList<Owner>();
+    List<Customer> customerList = new ArrayList<Customer>();
+
+
+      VehicleRentingSystem vrs = new VehicleRentingSystem();
+
+      vrs.addOwner();
+      vrs.showOwnerDetails();
+      vrs.addCustomer();
+      vrs.showCustomerDetails();
+    }
+
+    public void addOwner()
+    {
+
+      LocalDate o1birthDate = LocalDate.of(1992,11,12);
+      Owner o1 = new Owner(1, "Logan", "Smith", Gender.MALE, o1birthDate, "6851478520", "LoganSmith@yahoo.com",
+              "Logan_12", "Logan@12342", "Tillman, Hand and Aufderhar", "9825147", "Carzz@ca", null);
+
+      LocalDate o2birthDate = LocalDate.of(1985,01,13);
+      Owner o2 = new Owner(2, "Grannie", "Fairbanks", Gender.MALE, o2birthDate, "6851478520", "gfairbanks0@cbsnews.com",
+              "gfairbanks0", "VR8wcd", "Rosenbaum, Schaden and O'Kon", "1791023", "washington.edu", null);
+
+      LocalDate o3birthDate = LocalDate.of(1978,07,15);
+      Owner o3 = new Owner(3, "Dicky", "Poli", Gender.MALE, o3birthDate, "6851478520", "dpoli1@drupal.org",
+              "dpoli1", "HhTUiByP", "Rice Group", "4229698", "bigcartel.com", null);
+
+      LocalDate o4birthDate = LocalDate.of(1982,10,26);
+      Owner o4 = new Owner(4, "Ralf", "Rossetti", Gender.MALE, o4birthDate, "6851478520", "rrossetti2@ca.gov",
+              "rrossetti2", "YO43tFQFcqap", "Fadel, Pollich and Schulist", "5288027", "pinterest.com", null);
+
+      LocalDate o5birthDate = LocalDate.of(1991,12,14);
+      Owner o5 = new Owner(5, "Madlin", "Leaman", Gender.MALE, o5birthDate, "6851478520", "mleaman3@adobe.com",
+              "mleaman3", "lMMMbM3OZu0F", "Christiansen", "9848129", "imdb.com", null);
+
+
+
+      LocalDate d1birthDate = LocalDate.of(1972,06,17);
+      Driver d1 = new Driver(1, "Phebe", "Regitz", Gender.MALE,d1birthDate, "6757862345", "pregitz0@sohu.com",
+              "pregitz0", "r6mFc6", 57656258, true, 1500);
+
+      LocalDate d2birthDate = LocalDate.of(1989,05,27);
+      Driver d2 = new Driver(2, "Alford", "Greenshields", Gender.FEMALE,d2birthDate, "5792798502", "agreenshields1@mit.edu",
+              "agreenshields1", "xpKQpM", 57656723, true, 2000);
+
+      LocalDate d3birthDate = LocalDate.of(1982,04,30);
+      Driver d3 = new Driver(3, "Genni", "Tumielli", Gender.MALE,d3birthDate, "7890251963", "gtumielli2@typepad.com",
+              "gtumielli2", "L72MVz", 78902514, false, 2500);
+
+      LocalDate d4birthDate = LocalDate.of(1998,03,12);
+      Driver d4 = new Driver(4, "Padraig", "Stanwix", Gender.MALE,d4birthDate, "7036971852", "pstanwix3@themeforest.net",
+              "pstanwix3", "SOaoCxBAm9Go", 78526723, true, 3000);
+
+      LocalDate d5birthDate = LocalDate.of(1989,02,29);
+      Driver d5 = new Driver(5, "Gusty", "Mityakov", Gender.FEMALE,d5birthDate, "6852089175", "gmityakov4@howstuffworks.com",
+              "gmityakov4", "CGHjDQVnhA", 57125823, false, 1000);
+
+
+
+      List<Vehicle> o1vehicleList = new ArrayList<Vehicle>();
+      o1.setVehicles(o1vehicleList);
+
+      List<Vehicle> o2vehicleList = new ArrayList<Vehicle>();
+      o2.setVehicles(o2vehicleList);
+
+      List<Vehicle> o3vehicleList = new ArrayList<Vehicle>();
+      o3.setVehicles(o1vehicleList);
+
+      List<Vehicle> o4vehicleList = new ArrayList<Vehicle>();
+      o4.setVehicles(o4vehicleList);
+
+      List<Vehicle> o5vehicleList = new ArrayList<Vehicle>();
+      o5.setVehicles(o5vehicleList);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
 
         LocalDate c1birthDate = LocalDate.of(1993,02,27);
         Customer c1 = new Customer(1,"John", "Thomas", Gender.MALE, c1birthDate,
@@ -163,6 +262,6 @@ public class VehicleRentingSystem {
         LocalDate vr5endDate = LocalDate.of(2009,11,28);
         VehicleRent vr5 = new VehicleRent(vr1startDate, vr1endDate, 8, "Z5K39Z0W76366K354", 90);
 
-
+*/
     }
-}
+

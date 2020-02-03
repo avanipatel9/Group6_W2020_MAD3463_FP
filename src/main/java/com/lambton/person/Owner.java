@@ -59,4 +59,7 @@ public class Owner extends Person
         System.out.println("Landline number : " + landlineNumber);
         System.out.println("Website : " + website);
     }
+
+    public void setVehicles(List<Vehicle> o1vehicleList) {
+    }
 }
