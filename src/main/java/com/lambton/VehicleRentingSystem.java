@@ -33,6 +33,8 @@ public class VehicleRentingSystem {
 
     Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH));
 
+    System.out.println("Workbook has " + workbook.getNumberOfSheets() + " Sheets : ");
+
     VehicleRentingSystem vrs = new VehicleRentingSystem();
     vrs.addOwner();
     vrs.showOwnerDetails();
