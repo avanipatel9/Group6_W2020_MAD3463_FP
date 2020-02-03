@@ -1,4 +1,4 @@
-package com.lambton.blowfish;
+package com.lambton.utilities;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
