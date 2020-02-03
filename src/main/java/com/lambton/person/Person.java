@@ -1,5 +1,7 @@
 package com.lambton.person;
 import com.lambton.IDisplay;
+import com.lambton.utilities.CommonFunctions;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.regex.Matcher;
@@ -17,7 +19,7 @@ public abstract class Person  implements IDisplay {
     protected String emailID;
     protected String userName;
     protected String password;
-
+    CommonFunctions cf= new CommonFunctions();
 
      public Person() {
      }
@@ -59,8 +61,6 @@ public abstract class Person  implements IDisplay {
     }
 
 
-
-
     public String getGender() {
         return gender;
     }
@@ -83,6 +83,7 @@ public abstract class Person  implements IDisplay {
     }
 
     public void setMobileNumber(String mobileNumber) {
+        cf.isContactNumberValid(mobileNumber);
         this.mobileNumber = mobileNumber;
     }
 

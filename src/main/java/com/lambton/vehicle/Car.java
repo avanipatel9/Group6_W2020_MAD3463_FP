@@ -40,7 +40,7 @@ public class Car extends Vehicle
     public void print() throws FileNotFoundException {
 
         System.out.println("--------------Car Details-------------");
-        System.out.println("Vehicle Identification Number : " + super.vehicleIdNumber);
+        System.out.println("Vehicle Identification Number : " + this.vehicleIdNumber);
         System.out.println("Vehicle Information : " + super.vehicleInfo);
         System.out.println("Manufacturer : " + super.manufacturerName);
         System.out.println("Is insured : " + super.isInsured);
