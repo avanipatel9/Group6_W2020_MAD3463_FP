@@ -3,6 +3,9 @@ import com.lambton.constants.Constants;
 import com.lambton.person.*;
 import com.lambton.utilities.Blowfish;
 import com.lambton.vehicle.*;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -12,6 +15,8 @@ import java.util.List;
 
 //Main class
 public class VehicleRentingSystem {
+
+  public static final String SAMPLE_XLSX_FILE_PATH = "";
   private ArrayList<Vehicle> Vehicles;
   List<Vehicle> vehicleList = new ArrayList<Vehicle>();
   List<Owner> ownerList = new ArrayList<Owner>();
@@ -25,6 +30,8 @@ public class VehicleRentingSystem {
 
 //Main method
   public static void main(String[] args) throws Exception {
+
+    Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH));
 
     VehicleRentingSystem vrs = new VehicleRentingSystem();
     vrs.addOwner();
