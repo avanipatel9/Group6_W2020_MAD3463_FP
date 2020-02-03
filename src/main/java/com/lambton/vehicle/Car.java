@@ -1,17 +1,18 @@
 package com.lambton.vehicle;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintStream;
 
 public class Car extends Vehicle
 {
+    //Car properties
     String carType;
     String carColor;
 
+    //Default Contructor
     public Car() {
     }
 
+    //Parameterised Constructor
     public Car(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
                String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, String carType, String carColor)
     {
@@ -20,6 +21,7 @@ public class Car extends Vehicle
         this.carColor = carColor;
     }
 
+    //Implementing getter setter
     public String getCarType() {
         return carType;
     }
@@ -36,6 +38,7 @@ public class Car extends Vehicle
         this.carColor = carColor;
     }
 
+    //Display Car Details
     @Override
     public void print() throws FileNotFoundException {
 
