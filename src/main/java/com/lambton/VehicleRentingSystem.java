@@ -364,6 +364,23 @@ public class VehicleRentingSystem {
   }
 
 
+  public MotorCycle setMotorCycleDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver,
+                                         Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, int maxSpeed, float milage)
+  {
+    MotorCycle mc = new MotorCycle();
+    mc.setVehicleInfo(vehicleInfo);
+    mc.setSelfDrive(isSelfDrive);
+    mc.setManufacturerName(manufacturerName);
+    mc.setInsured(isInsured);
+    mc.setNumberOfSeats(numberOfSeats);
+    mc.setInsuranceProviderName(insuranceProviderName);
+    mc.setFuelType(fuelType);
+    mc.setRatePerDay(ratePerDay);
+    mc.setRatePerKM(ratePerKM);
+    mc.setMaxSpeed(maxSpeed);
+    mc.setMilage(milage);
+    return mc;
+  }
 
 }
 
