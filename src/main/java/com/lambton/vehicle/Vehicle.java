@@ -2,6 +2,8 @@ package com.lambton.vehicle;
 
 import com.lambton.IDisplay;
 
+import java.util.HashMap;
+
 public abstract class Vehicle implements IDisplay
 {
     String vehicleIdNumber;
@@ -15,6 +17,15 @@ public abstract class Vehicle implements IDisplay
     FuelType fuelType;
     int ratePerDay;
     double ratePerKM;
+    HashMap<String, String> ratePerKmVehicleTpe = new HashMap<String, String>();
+
+    public HashMap<String, String> getRatePerKmVehicleTpe() {
+        return ratePerKmVehicleTpe;
+    }
+
+    public void setRatePerKmVehicleTpe(HashMap<String, String> ratePerKmVehicleTpe) {
+        this.ratePerKmVehicleTpe = ratePerKmVehicleTpe;
+    }
 
     public String getVehicleIdNumber() {
         return vehicleIdNumber;
