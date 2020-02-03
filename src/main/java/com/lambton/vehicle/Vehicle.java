@@ -26,10 +26,10 @@ public abstract class Vehicle implements IDisplay
         this.ratePerKmVehicleTpe = ratePerKmVehicleTpe;
     }
 
+
     public String getVehicleIdNumber() {
         return vehicleIdNumber;
     }
-
 
     public String getVehicleInfo() {
         return vehicleInfo;
@@ -106,5 +106,8 @@ public abstract class Vehicle implements IDisplay
     }
     public void setRatePerKM(int ratePerKM) {
         this.ratePerKM = ratePerKM;
+    }
+
+    public void display() {
     }
 }

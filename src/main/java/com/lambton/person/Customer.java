@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Customer extends Person
 {
@@ -14,6 +15,8 @@ public class Customer extends Person
     private String city;
     ArrayList<VehicleRent> vehicleRents;
 
+
+    
     public Customer() {
     }
 
@@ -65,5 +68,8 @@ public class Customer extends Person
         System.out.println("Username : " + super.userName);
         System.out.println("Address : " + this.address);
         System.out.println("City : " + this.city);
+    }
+
+    public void VehicleRent(List<VehicleRent> c1rnt) {
     }
 }

@@ -22,8 +22,9 @@ public class VehicleRent implements IDisplay
     //private constructor.
     public VehicleRent(){}
 
-    public VehicleRent(LocalDate vr1startDate, LocalDate vr1endDate, int noOfDays, String vehicleId, int noOfKmDrived) {
-    }
+
+    public VehicleRent(LocalDate vr1startDate, LocalDate vr1endDate, int noOfDays, String vehicleId, int noOfKmDrived)
+    {
 
     public static VehicleRent getInstance() {
         return vVehicleRent;
@@ -78,6 +79,13 @@ public class VehicleRent implements IDisplay
     }
 
 
+    public void display() {
+        
+    }
+
+    public Vehicle getVehicle() {
+
+
     @Override
     public void print() throws FileNotFoundException {
         PrintStream o = new PrintStream(new File("Output.txt"));
@@ -89,6 +97,7 @@ public class VehicleRent implements IDisplay
         System.out.println("Total Days Of Rent : " +rentInNoOfDays());
         System.out.println("No Of Km Derived : " +noOfKmDerived);
         System.out.println("Total Bill To Pay : " +totalBillToPay());
+
     }
 }
 

@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
+
 public abstract class Person  implements IDisplay {
     protected int id;
     protected String firstName;
@@ -20,7 +21,7 @@ public abstract class Person  implements IDisplay {
 
      public Person() {
      }
-
+    
      public Person(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
          this.id = id;
          this.firstName = firstName;
@@ -56,6 +57,9 @@ public abstract class Person  implements IDisplay {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+
+
 
     public String getGender() {
         return gender;
@@ -141,6 +145,10 @@ public abstract class Person  implements IDisplay {
          return matcher.matches();
      }
 
+
+
+
+     public abstract boolean getVehicleRent();
 
  }
 

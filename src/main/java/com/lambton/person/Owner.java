@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.List;
 
 public class Owner extends Person
@@ -15,9 +16,8 @@ public class Owner extends Person
     private String website;
     List<Vehicle> vehicles;
 
-    
-    public Owner(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String companyTitle, String landlineNumber, String website, List<Vehicle> vehicles) {
 
+    public Owner(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String companyTitle, String landlineNumber, String website, List<Vehicle> vehicles) {
         super(id, firstName, lastName,gender, birthDate, mobileNumber, emailID, userName, password);
         this.companyTitle = companyTitle;
         this.landlineNumber = landlineNumber;
@@ -26,7 +26,7 @@ public class Owner extends Person
     }
 
     public Owner() {
-
+        super();
     }
 
     public String getCompanyTitle() {
@@ -78,5 +78,25 @@ public class Owner extends Person
         System.out.println("Company Name : " + companyTitle);
         System.out.println("Landline number : " + landlineNumber);
         System.out.println("Website : " + website);
+    }
+
+    public void setVehicles(List<Vehicle> o1vehicleList) {
+    }
+
+    public void ownerList(){
+    }
+
+    public void vehicleList(){
+    }
+
+    public void display() {
+    }
+
+    public Object getVehicle() {
+        return null;
+    }
+
+    public Collection<Object> getVehicles() {
+        return null;
     }
 }
