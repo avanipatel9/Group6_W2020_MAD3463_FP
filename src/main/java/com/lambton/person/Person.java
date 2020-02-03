@@ -144,12 +144,6 @@ public abstract class Person  implements IDisplay {
          System.out.println(matcher.matches());
          return matcher.matches();
      }
-
-
-
-
-     public abstract boolean getVehicleRent();
-
  }
 
 
