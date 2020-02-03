@@ -7,7 +7,7 @@ Members:
 
 1.Avani  -
 
-2.Shreya -
+2.Shreya Vaghasiya -  C0777726
 
 3.Charmi Patel - C0768448
 
