@@ -91,11 +91,9 @@ public abstract class Vehicle implements IDisplay
     public FuelType getFuelType() {
         return fuelType;
     }
-
     public void setFuelType(FuelType fuelType) {
         this.fuelType = fuelType;
     }
-
     public int getRatePerDay() {
         return ratePerDay;
     }
@@ -104,14 +102,10 @@ public abstract class Vehicle implements IDisplay
         this.ratePerDay = ratePerDay;
         return ratePerDay;
     }
-
     public double getRatePerKM() {
         return ratePerKM;
     }
-
     public void setRatePerKM(int ratePerKM) {
         this.ratePerKM = ratePerKM;
     }
-
-
 }
