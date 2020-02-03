@@ -31,10 +31,20 @@ public class VehicleRentingSystem {
 //Main method
   public static void main(String[] args) throws Exception {
 
+    // Creating a Workbook from an Excel file (.xls or .xlsx)
     Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH));
 
+    // Retrieving the number of sheets in the Workbook
     System.out.println("Workbook has " + workbook.getNumberOfSheets() + " Sheets : ");
 
+
+    /*
+           =============================================================
+           Iterating over all the sheets in the workbook (Multiple ways)
+           =============================================================
+        */
+
+    // 1. You can obtain a sheetIterator and iterate over it
     Iterator<Sheet> sheetIterator = workbook.sheetIterator();
     System.out.println("Retrieving Sheets using Iterator");
     while (sheetIterator.hasNext()) {
