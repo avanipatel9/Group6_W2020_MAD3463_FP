@@ -1,6 +1,8 @@
 package com.lambton.vehicle;
 
 import com.lambton.IDisplay;
+
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 public abstract class Vehicle implements IDisplay
@@ -17,6 +19,9 @@ public abstract class Vehicle implements IDisplay
     int ratePerDay;
     double ratePerKM;
     HashMap<String, String> ratePerKmVehicleTpe = new HashMap<String, String>();
+
+    public Vehicle() {
+    }
 
     public HashMap<String, String> getRatePerKmVehicleTpe() {
         return ratePerKmVehicleTpe;
@@ -108,6 +113,7 @@ public abstract class Vehicle implements IDisplay
         this.ratePerKM = ratePerKM;
     }
 
-    public void display() {
+    @Override
+    public void print() throws FileNotFoundException {
     }
 }
