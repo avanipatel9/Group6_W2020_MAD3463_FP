@@ -9,7 +9,11 @@ import java.util.regex.Pattern;
 
 
 
-public abstract class Person  implements IDisplay {
+public abstract class Person  implements IDisplay
+{
+
+//Person Attributes
+
     protected int id;
     protected String firstName;
     protected String lastName;
