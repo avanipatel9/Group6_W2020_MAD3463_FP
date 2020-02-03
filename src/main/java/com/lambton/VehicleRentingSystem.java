@@ -1,6 +1,9 @@
 package com.lambton;
 import com.lambton.person.*;
-import com.lambton.vehicle.*;
+import com.lambton.vehicle.Bus;
+import com.lambton.vehicle.Car;
+import com.lambton.vehicle.MotorCycle;
+import com.lambton.vehicle.Vehicle;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -39,9 +42,9 @@ public class VehicleRentingSystem {
       VehicleRentingSystem vrs = new VehicleRentingSystem();
 
       vrs.addOwner();
-      vrs.setOwnerDetails();
+      vrs.showOwnerDetails();
       vrs.addCustomer();
-      vrs.setCustomerDetails();
+      vrs.showCustomerDetails();
     }
 
     public void addOwner()
@@ -278,7 +281,7 @@ public class VehicleRentingSystem {
     }
 
 
-    public Owner setOwnerDetails(int id, String firstName, String lastName, String gender, LocalDate birthDate,
+    public Owner showOwnerDetails(int id, String firstName, String lastName, String gender, LocalDate birthDate,
                                   String mobileNumber, String emailID, String userName, String password, String companyTitle,
                                   String landLineNumber, String website, List<Vehicle> vehicles)
     {
@@ -322,7 +325,7 @@ public class VehicleRentingSystem {
 
 
 
-  public Customer setCustomerDetails(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber,
+  public Customer showCustomerDetails(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber,
                                       String emailID, String userName, String password, String address, String city, ArrayList<VehicleRent> vehicleRents)
     {
 
@@ -343,7 +346,7 @@ public class VehicleRentingSystem {
 
 
   public Car setCarDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
-                           String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, String carType, String carColor)
+                           String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String carType, String carColor)
   {
     Car car = new Car();
     car.setVehicleInfo(vehicleInfo);
@@ -362,7 +365,7 @@ public class VehicleRentingSystem {
 
 
   public MotorCycle setMotorCycleDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver,
-                                         Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, int maxSpeed, float milage)
+                                         Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, int maxSpeed, float milage)
   {
     MotorCycle mc = new MotorCycle();
     mc.setVehicleInfo(vehicleInfo);
@@ -381,7 +384,7 @@ public class VehicleRentingSystem {
 
 
   public Bus setBusDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
-                           String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, String busType,
+                           String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String busType,
                            boolean serviceAvailability, boolean wifiAvailability)
   {
     Bus bus = new Bus();
@@ -436,7 +439,7 @@ public class VehicleRentingSystem {
           for (Vehicle vehicle : owner.getVehicles())
           {
 
-            vehicle.print();
+            vehicle.display();
             if (vehicle.getDriver() != null)
             {
               vehicle.getDriver().print();
@@ -446,7 +449,7 @@ public class VehicleRentingSystem {
         }
       }
     }
-
+  
 
     public void displayCustomerDetails()
   {

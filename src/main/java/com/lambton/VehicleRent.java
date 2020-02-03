@@ -15,20 +15,10 @@ public class VehicleRent implements IDisplay
     Vehicle vehicle;
     double noOfKmDerived;
     double totalBillToPay;
-
-    //Singleton class implementation
-    private static volatile VehicleRent vVehicleRent = new VehicleRent();
-
-    //private constructor.
     public VehicleRent(){}
 
-
     public VehicleRent(LocalDate vr1startDate, LocalDate vr1endDate, int noOfDays, String vehicleId, int noOfKmDrived)
-    {
-
-    public static VehicleRent getInstance() {
-        return vVehicleRent;
-    }
+    { }
 
 
     public LocalDate getRentStartDate() {
@@ -79,11 +69,6 @@ public class VehicleRent implements IDisplay
     }
 
 
-    public void display() {
-        
-    }
-
-    public Vehicle getVehicle() {
 
 
     @Override
@@ -100,7 +85,4 @@ public class VehicleRent implements IDisplay
 
     }
 }
-
-
-
 
