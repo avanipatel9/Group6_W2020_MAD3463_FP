@@ -24,6 +24,7 @@ public class Customer extends Person
     public Customer() {
     }
 
+    //Paramaterized Constructor
     public Customer(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String address, String city, ArrayList<VehicleRent> vehicleRents)
     {
         super(id, firstName, lastName, gender, birthDate, mobileNumber, emailID, userName, password);
