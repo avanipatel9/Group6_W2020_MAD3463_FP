@@ -13,11 +13,13 @@ import java.util.List;
 
 public class Customer extends Person
 {
+
+   //Customer Attributes
     private String address;
     private String city;
     ArrayList<VehicleRent> vehicleRents;
 
-
+//
     
     public Customer() {
     }
