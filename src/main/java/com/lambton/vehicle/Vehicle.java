@@ -23,6 +23,21 @@ public abstract class Vehicle implements IDisplay
     public Vehicle() {
     }
 
+    public Vehicle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, HashMap<String, String> ratePerKmVehicleTpe) {
+        this.vehicleIdNumber = vehicleIdNumber;
+        this.vehicleInfo = vehicleInfo;
+        this.manufacturerName = manufacturerName;
+        this.isSelfDrive = isSelfDrive;
+        this.driver = driver;
+        this.isInsured = isInsured;
+        this.insuranceProviderName = insuranceProviderName;
+        this.numberOfSeats = numberOfSeats;
+        this.fuelType = fuelType;
+        this.ratePerDay = ratePerDay;
+        this.ratePerKM = ratePerKM;
+        this.ratePerKmVehicleTpe = ratePerKmVehicleTpe;
+    }
+
     public HashMap<String, String> getRatePerKmVehicleTpe() {
         return ratePerKmVehicleTpe;
     }
