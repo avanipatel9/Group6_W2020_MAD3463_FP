@@ -48,9 +48,7 @@ public class Bus extends Vehicle
 
     @Override
     public void print() throws FileNotFoundException {
-        PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
-        PrintStream console = System.out;
-        System.setOut(o);
+
         System.out.println("--------------Bus Details-------------");
         System.out.println("Vehicle Identification Number : " + super.vehicleIdNumber);
         System.out.println("Vehicle Information : " + super.vehicleInfo);

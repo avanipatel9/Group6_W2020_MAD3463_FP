@@ -73,9 +73,7 @@ public class VehicleRent implements IDisplay
 
     @Override
     public void print() throws FileNotFoundException {
-        PrintStream o = new PrintStream(new File("Output.txt"));
-        PrintStream console = System.out;
-        System.setOut(o);
+
         System.out.println("----------------Vehicle Rent Details-----------------");
         System.out.println("Rent Start Date : " +rentStartDate);
         System.out.println("Rent End  Date : " +rentEndDate);

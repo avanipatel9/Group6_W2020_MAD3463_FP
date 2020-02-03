@@ -15,22 +15,13 @@ public class VehicleRentingSystem {
   List<Vehicle> vehicleList = new ArrayList<Vehicle>();
   List<Owner> ownerList = new ArrayList<Owner>();
   List<Customer> customerList = new ArrayList<Customer>();
+  PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
+
+  public VehicleRentingSystem() throws FileNotFoundException {
+  }
 
 
   public static void main(String[] args) throws Exception {
-    // Creating a File object that represents the disk file.
-    PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
-    // Store current System.out before assigning a new value
-    PrintStream console = System.out;
-    // Assign o to output stream
-    System.setOut(o);
-    System.out.println("This will be written to the text file");
-    System.out.println("This will be written to the text file 2 ");
-    System.out.println("This will be written to the text file 3 ");
-    // Use stored value for output stream
-    System.setOut(console);
-    System.out.println("This will be written on the console!");
-
 
     VehicleRentingSystem vrs = new VehicleRentingSystem();
 
@@ -407,7 +398,7 @@ public class VehicleRentingSystem {
       System.out.println("***********************************************");
 
       for (Owner owner : ownerList) {
-
+        System.setOut(o);
         owner.print();
         if (owner.getVehicles() != null || owner.getVehicles().size() > 0) {
           for (Vehicle vehicle : owner.getVehicles()) {
@@ -432,7 +423,7 @@ public class VehicleRentingSystem {
         System.out.println("***********************************************");
 
         for (Customer customer : customerList) {
-
+          System.setOut(o);
           customer.print();
 
           }

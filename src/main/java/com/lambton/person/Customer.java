@@ -54,9 +54,9 @@ public class Customer extends Person
 
     @Override
     public void print() throws FileNotFoundException {
-        PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
-        PrintStream console = System.out;
-        System.setOut(o);
+      //  PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
+       // PrintStream console = System.out;
+       // System.setOut(o);
         System.out.println("--------------Customer Details-------------");
         System.out.println("Customer First Name : " + super.firstName);
         System.out.println("Customer Last Name : " + super.lastName);
