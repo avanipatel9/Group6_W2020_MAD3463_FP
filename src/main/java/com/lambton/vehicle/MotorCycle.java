@@ -1,17 +1,18 @@
 package com.lambton.vehicle;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintStream;
 
 public class MotorCycle extends Vehicle
 {
+    //MotorCycle properties
     int maxSpeed;
     float milage;
 
+    //Default Constructor
     public MotorCycle() {
     }
 
+    //Parameterised Constructor
     public MotorCycle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver,
                       Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, int maxSpeed, float milage)
     {
