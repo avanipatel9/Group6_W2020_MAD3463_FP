@@ -27,10 +27,10 @@ package com.lambton.vehicle;
         this.ratePerKM = ratePerKM;
     }
 
+
     public String getVehicleIdNumber() {
         return vehicleIdNumber;
     }
-
 
     public String getVehicleInfo() {
         return vehicleInfo;
@@ -110,5 +110,8 @@ package com.lambton.vehicle;
 
     public void setRatePerKM(int ratePerKM) {
         this.ratePerKM = ratePerKM;
+    }
+
+    public void display() {
     }
 }

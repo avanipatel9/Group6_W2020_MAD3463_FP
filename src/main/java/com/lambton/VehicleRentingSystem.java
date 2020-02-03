@@ -423,7 +423,35 @@ public class VehicleRentingSystem {
     return null;
   }
 
+  public void ShowOwnerDetails()
+  {
+    if (ownerList.size() > 0) 
+    {
+      System.out.println("***********************************************");
+      System.out.println("-------------------OWNER DETAILS-----------------------");
+      System.out.println("***********************************************");
 
+      for (Owner owner : ownerList)
+      {
+
+        owner.display();
+        if (owner.getVehicles() != null || owner.getVehicles().size() > 0)
+        {
+          for (Vehicle vehicle : owner.getVehicles())
+          {
+
+            vehicle.display();
+            if (vehicle.getDriver() != null)
+            {
+              vehicle.getDriver().display();
+            }
+
+          }
+        }
+      }
+    }
+
+  }
 
 
 }

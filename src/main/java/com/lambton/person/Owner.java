@@ -3,6 +3,7 @@ package com.lambton.person;
 import com.lambton.vehicle.Vehicle;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.List;
 
 public class Owner extends Person
@@ -74,5 +75,16 @@ public class Owner extends Person
     }
 
     public void vehicleList(){
+    }
+
+    public void display() {
+    }
+
+    public Object getVehicle() {
+        return null;
+    }
+
+    public Collection<Object> getVehicles() {
+        return null;
     }
 }
