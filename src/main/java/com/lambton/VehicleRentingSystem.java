@@ -68,6 +68,9 @@ public class VehicleRentingSystem {
       }
     }
 
+    workbook.close();
+
+
     VehicleRentingSystem vrs = new VehicleRentingSystem();
     vrs.addOwner();
     vrs.showOwnerDetails();
