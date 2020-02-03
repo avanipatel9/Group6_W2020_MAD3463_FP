@@ -3,9 +3,7 @@ package com.lambton.person;
 import com.lambton.constants.Constants;
 import com.lambton.utilities.Blowfish;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintStream;
 import java.time.LocalDate;
 
 public class Driver extends Person
@@ -50,6 +48,7 @@ public class Driver extends Person
         this.salary = salary;
     }
 
+    //Display Driver Details
     @Override
     public void print() throws FileNotFoundException {
 
