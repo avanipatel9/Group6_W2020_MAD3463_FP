@@ -1,5 +1,8 @@
 package com.lambton.vehicle;
- public abstract class Vehicle
+
+import com.lambton.IDisplay;
+
+public abstract class Vehicle implements IDisplay
 {
     String vehicleIdNumber;
     String vehicleInfo;
@@ -12,20 +15,6 @@ package com.lambton.vehicle;
     String fuelType;
     int ratePerDay;
     double ratePerKM;
-
-    public Vehicle() {
-        this.vehicleIdNumber = vehicleIdNumber;
-        this.vehicleInfo = vehicleInfo;
-        this.manufacturerName = manufacturerName;
-        this.isSelfDrive = isSelfDrive;
-        this.driver = driver;
-        this.isInsured = isInsured;
-        this.insuranceProviderName = insuranceProviderName;
-        this.numberOfSeats = numberOfSeats;
-        this.fuelType = fuelType;
-        this.ratePerDay = ratePerDay;
-        this.ratePerKM = ratePerKM;
-    }
 
     public String getVehicleIdNumber() {
         return vehicleIdNumber;
@@ -112,4 +101,6 @@ package com.lambton.vehicle;
     public void setRatePerKM(int ratePerKM) {
         this.ratePerKM = ratePerKM;
     }
+
+
 }

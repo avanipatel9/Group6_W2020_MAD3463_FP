@@ -1,5 +1,9 @@
 package com.lambton.vehicle;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class Bus extends Vehicle
 {
     String busType;
@@ -35,5 +39,16 @@ public class Bus extends Vehicle
 
     public void setWifiAvailability(boolean wifiAvailability) {
         this.wifiAvailability = wifiAvailability;
+    }
+
+    @Override
+    public void print() throws FileNotFoundException {
+        PrintStream o = new PrintStream(new File("Output.txt"));
+        PrintStream console = System.out;
+        System.setOut(o);
+        System.out.println("---------Bus Details--------------");
+        System.out.println("Bus Type: " +busType);
+        System.out.println("Service Availability: "+serviceAvailability);
+        System.out.println("Wifi Availability: "+wifiAvailability);
     }
 }
