@@ -62,4 +62,10 @@ public class Owner extends Person
 
     public void setVehicles(List<Vehicle> o1vehicleList) {
     }
+
+    public void ownerList(){
+    }
+
+    public void vehicleList(){
+    }
 }

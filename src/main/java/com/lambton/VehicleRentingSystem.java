@@ -161,21 +161,56 @@ public class VehicleRentingSystem {
       o1vehicleList.add(m1);
       o1vehicleList.add(b1);
 
-      o1vehicleList.add(ca2);
-      o1vehicleList.add(m2);
-      o1vehicleList.add(b2);
+      o2vehicleList.add(ca2);
+      o2vehicleList.add(m2);
+      o2vehicleList.add(b2);
 
-      o1vehicleList.add(ca3);
-      o1vehicleList.add(m3);
-      o1vehicleList.add(b3);
+      o3vehicleList.add(ca3);
+      o3vehicleList.add(m3);
+      o3vehicleList.add(b3);
 
-      o1vehicleList.add(ca4);
-      o1vehicleList.add(m4);
-      o1vehicleList.add(b4);
+      o4vehicleList.add(ca4);
+      o4vehicleList.add(m4);
+      o4vehicleList.add(b4);
 
-      o1vehicleList.add(ca5);
-      o1vehicleList.add(m5);
-      o1vehicleList.add(b5);
+      o5vehicleList.add(ca5);
+      o5vehicleList.add(m5);
+      o5vehicleList.add(b5);
+
+
+    //  vehicleList.add(b1);
+
+
+    }
+
+
+    public void addCustomer()
+    {
+
+      LocalDate c1birthDate = LocalDate.of(1993,02,27);
+      Customer c1 = new Customer(1,"John", "Thomas", Gender.MALE, c1birthDate,
+              "4782257410", "John123@gmail.com", "John_123", "John123", "26,Painted Post",
+              "Brampton", null);
+
+      LocalDate c2birthDate = LocalDate.of(1979,12,2);
+      Customer c2 = new Customer(2,"Johnsan", "Kale", Gender.MALE, c2birthDate,
+              "4782275810", "Johnsan123@gmail.com", "John35", "John@123",
+              "26,Markham Road","Toronto", null);
+
+      LocalDate c3birthDate = LocalDate.of(1989,04,30);
+      Customer c3 = new Customer(3,"Christiana", "Roger", Gender.FEMALE, c3birthDate,
+              "6478587419", "Christ@gmail.com", "Christiana_Roger", "xaY32@tyu",
+              "B143,Mornington Road","Scarborough", null);
+
+      LocalDate c4birthDate = LocalDate.of(1990,11,16);
+      Customer c4 = new Customer(4,"Aubrie", "Clucas", Gender.MALE, c4birthDate,
+              "8795514792", "Aurbie@gmail.com", "Ruby_12", "tre5TY@tyu",
+              "6488 Bellgrove Plaza","Okinawa ", null);
+
+      LocalDate c5birthDate = LocalDate.of(1986,07,19);
+      Customer c5 = new Customer(5,"Lorelei ", "Anshell", Gender.FEMALE, c5birthDate,
+              "2576690158", "lanshell1@reverbnation.com", "lanshell1", "L7ZvtX5wJN",
+              "34 Fuller Lane","Novorossiysk", null);
 
 
 
