@@ -1,5 +1,9 @@
 package com.lambton.vehicle;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class Car extends Vehicle
 {
     String carType;
@@ -25,5 +29,14 @@ public class Car extends Vehicle
 
     public void setCarColor(String carColor) {
         this.carColor = carColor;
+    }
+
+    public void print() throws FileNotFoundException {
+        PrintStream o = new PrintStream(new File("Output.txt"));
+        PrintStream console = System.out;
+        System.setOut(o);
+        System.out.println("---------Car Details--------------");
+        System.out.println("Car Type: "+carType);
+        System.out.println("Car Color: "+carColor);
     }
 }
