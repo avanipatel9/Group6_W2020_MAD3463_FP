@@ -1,22 +1,20 @@
 package com.lambton;
 import com.lambton.constants.Constants;
-import com.lambton.person.*;
+import com.lambton.person.Customer;
+import com.lambton.person.Driver;
+import com.lambton.person.Owner;
 import com.lambton.utilities.Blowfish;
 import com.lambton.vehicle.*;
-import org.apache.poi.ss.usermodel.*;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 //Main class
 public class VehicleRentingSystem {
 
-  public static final String SAMPLE_XLSX_FILE_PATH = "/Users/avanipatel/Desktop/Java/Data_FinalProject_MAD3463.xlsx";
   private ArrayList<Vehicle> Vehicles;
   List<Vehicle> vehicleList = new ArrayList<Vehicle>();
   List<Owner> ownerList = new ArrayList<Owner>();
@@ -30,63 +28,6 @@ public class VehicleRentingSystem {
 
 //Main method
   public static void main(String[] args) throws Exception {
-
-    // Creating a Workbook from an Excel file (.xls or .xlsx)
-    Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH));
-
-    // Retrieving the number of sheets in the Workbook
-    System.out.println("Workbook has " + workbook.getNumberOfSheets() + " Sheets : ");
-
-
-    /*
-           =============================================================
-           Iterating over all the sheets in the workbook (Multiple ways)
-           =============================================================
-        */
-
-    // 1. You can obtain a sheetIterator and iterate over it
-    Iterator<Sheet> sheetIterator = workbook.sheetIterator();
-    System.out.println("Retrieving Sheets using Iterator");
-    while (sheetIterator.hasNext()) {
-      Sheet sheet = sheetIterator.next();
-      System.out.println("=> " + sheet.getSheetName());
-    }
-
-
-        /*
-           ==================================================================
-           Iterating over all the rows and columns in a Sheet (Multiple ways)
-           ==================================================================
-        */
-    for (int i = 0; i<7; i++)
-    {
-      // Getting the Sheet at index zero
-      Sheet sheet = workbook.getSheetAt(i);
-
-      // Create a DataFormatter to format and get each cell's value as String
-      DataFormatter dataFormatter = new DataFormatter();
-
-      // 1. You can obtain a rowIterator and columnIterator and iterate over them
-      System.out.println("\n\nIterating over Rows and Columns using Iterator\n");
-      Iterator<Row> rowIterator = sheet.rowIterator();
-      while (rowIterator.hasNext()) {
-        Row row = rowIterator.next();
-
-        // Now let's iterate over the columns of the current row
-        Iterator<Cell> cellIterator = row.cellIterator();
-
-        while (cellIterator.hasNext()) {
-          Cell cell = cellIterator.next();
-          String cellValue = dataFormatter.formatCellValue(cell);
-          System.out.print(cellValue + "\t");
-        }
-        System.out.println();
-      }
-    }
-
-    // Closing the workbook
-    workbook.close();
-
 
     VehicleRentingSystem vrs = new VehicleRentingSystem();
     vrs.addOwner();
