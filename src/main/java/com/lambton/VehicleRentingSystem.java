@@ -345,6 +345,24 @@ public class VehicleRentingSystem {
     }
 
 
+  public Car setCarDetails(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
+                           String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String carType, String carColor)
+  {
+    Car car = new Car();
+    car.setVehicleInfo(vehicleInfo);
+    car.setSelfDrive(isSelfDrive);
+    car.setManufacturerName(manufacturerName);
+    car.setInsured(isInsured);
+    car.setNumberOfSeats(numberOfSeats);
+    car.setInsuranceProviderName(insuranceProviderName);
+    car.setFuelType(fuelType);
+    car.setRatePerDay(ratePerDay);
+    car.setRatePerKM((int) ratePerKM);
+    car.setCarType(carType);
+    car.setCarColor(carColor);
+    return car;
+  }
+
 
 
 }
