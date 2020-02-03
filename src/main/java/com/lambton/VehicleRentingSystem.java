@@ -285,7 +285,7 @@ public class VehicleRentingSystem {
                                   String mobileNumber, String emailID, String userName, String password, String companyTitle,
                                   String landLineNumber, String website, List<Vehicle> vehicles)
     {
-        Owner owner = new Owner();
+      Owner owner = new Owner();
      // LocalDate bDate = util.getDateFromString(birthDate);
       owner.setFirstName(firstName);
       owner.setLastName(lastName);
@@ -300,12 +300,32 @@ public class VehicleRentingSystem {
       owner.setWebsite(website);
       return owner;
 
-
     }
 
 
+  public Driver setDriverDetails(int id, String firstName, String lastName, Gender.Gender gender, LocalDate birthDate,
+                                 String mobileNumber, String emailID, String userName, String password,
+                                 int drivingLicenceNumber, boolean isDrivingHistoryCleared, float salary)
+  {
+    Driver driver = new Driver();
+    //LocalDate bDate = util.getDateFromString(birthDate);
+    driver.setFirstName(firstName);
+    driver.setLastName(lastName);
+    driver.setGender(gender);
+    driver.setBirthDate(birthDate);
+    driver.setMobileNumber(mobileNumber);
+    driver.setEmailID(emailID);
+    driver.setPassword(password);
+    driver.setDrivingLicenceNumber(drivingLicenceNumber);
+    driver.setDrivingHistoryCleared(isDrivingHistoryCleared);
+    driver.setSalary(salary);
+    return driver;
 
-    public void showCustomerDetails()
+  }
+
+
+
+  public void showCustomerDetails()
     {
 
 

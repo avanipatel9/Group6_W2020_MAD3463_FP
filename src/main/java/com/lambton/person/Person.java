@@ -8,15 +8,13 @@ import java.util.regex.Pattern;
 
 public enum Gender
 {
+
     MALE,
     FEMALE,
     OTHERS;
 
-    public enum Gender
+    public class Gender
     {
-        MALE,
-        FEMALE,
-        OTHERS
     }
 }
 

@@ -23,6 +23,10 @@ public class Owner extends Person
         this.vehicles = vehicles;
     }
 
+    public Owner() {
+        super();
+    }
+
     public String getCompanyTitle() {
         return companyTitle;
     }
