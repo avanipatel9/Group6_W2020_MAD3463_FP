@@ -4,13 +4,16 @@ import java.io.FileNotFoundException;
 
 public class Bus extends Vehicle
 {
+    //Bus properties
     String busType;
     Boolean serviceAvailability;
     Boolean wifiAvailability;
 
+    //Default Constructor
     public Bus() {
     }
 
+    //Parameterised Constructor
     public Bus(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
                String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, String busType,
                boolean serviceAvailability, boolean wifiAvailability)
@@ -21,6 +24,7 @@ public class Bus extends Vehicle
         this.wifiAvailability = wifiAvailability;
     }
 
+    //Implementing Getter and Setter
     public String getBusType() {
         return busType;
     }
