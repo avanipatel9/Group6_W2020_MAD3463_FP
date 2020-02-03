@@ -1,5 +1,8 @@
 package com.lambton.person;
 
+import com.lambton.constants.Constants;
+import com.lambton.utilities.Blowfish;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -59,6 +62,7 @@ public class Driver extends Person
         System.out.println("Mobile Number : +1 " + super.mobileNumber);
         System.out.println("Email Id : " + super.emailID);
         System.out.println("Username : " + super.userName);
+        System.out.println("Password : " + Blowfish.encrypt(password, Constants.key));
         System.out.println("Address : " + this.drivingLicenceNumber);
         System.out.println(("Salary : " + salary));
     }

@@ -1,5 +1,7 @@
 package com.lambton;
+import com.lambton.constants.Constants;
 import com.lambton.person.*;
+import com.lambton.utilities.Blowfish;
 import com.lambton.vehicle.*;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,6 +17,7 @@ public class VehicleRentingSystem {
   List<Vehicle> vehicleList = new ArrayList<Vehicle>();
   List<Owner> ownerList = new ArrayList<Owner>();
   List<Customer> customerList = new ArrayList<Customer>();
+
   PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
 
   public VehicleRentingSystem() throws FileNotFoundException {
@@ -22,6 +25,7 @@ public class VehicleRentingSystem {
 
 
   public static void main(String[] args) throws Exception {
+
 
     VehicleRentingSystem vrs = new VehicleRentingSystem();
 
@@ -272,7 +276,8 @@ public class VehicleRentingSystem {
     owner.setMobileNumber(mobileNumber);
     owner.setEmailID(emailID);
     owner.setUserName(userName);
-    owner.setPassword(password);
+    String encrypted = Blowfish.encrypt(password, Constants.key);
+    owner.setPassword(encrypted);
     owner.setCompanyTitle(companyTitle);
     owner.setLandlineNumber(landLineNumber);
     owner.setWebsite(website);
@@ -292,7 +297,8 @@ public class VehicleRentingSystem {
     driver.setBirthDate(birthDate);
     driver.setMobileNumber(mobileNumber);
     driver.setEmailID(emailID);
-    driver.setPassword(password);
+    String encrypted = Blowfish.encrypt(password, Constants.key);
+    driver.setPassword(encrypted);
     driver.setDrivingLicenceNumber(drivingLicenceNumber);
     driver.setDrivingHistoryCleared(isDrivingHistoryCleared);
     driver.setSalary(salary);
@@ -312,7 +318,8 @@ public class VehicleRentingSystem {
     customer.setBirthDate(birthDate);
     customer.setMobileNumber(mobileNumber);
     customer.setEmailID(emailID);
-    customer.setPassword(password);
+    String encrypted = Blowfish.encrypt(password, Constants.key);
+    customer.setPassword(encrypted);
     customer.setAddress(address);
     customer.setCity(city);
     return customer;

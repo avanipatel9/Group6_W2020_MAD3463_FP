@@ -1,5 +1,7 @@
 package com.lambton.person;
 
+import com.lambton.constants.Constants;
+import com.lambton.utilities.Blowfish;
 import com.lambton.vehicle.Vehicle;
 
 import java.io.File;
@@ -75,6 +77,7 @@ public class Owner extends Person
         System.out.println("Mobile Number : +1 " + super.mobileNumber);
         System.out.println("Email Id : " + super.emailID);
         System.out.println("Username : " + super.userName);
+        System.out.println("Password : " + Blowfish.encrypt(password, Constants.key));
         System.out.println("Company Name : " + companyTitle);
         System.out.println("Landline number : " + landlineNumber);
         System.out.println("Website : " + website);

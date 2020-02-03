@@ -1,6 +1,8 @@
 package com.lambton.person;
 
 import com.lambton.VehicleRent;
+import com.lambton.constants.Constants;
+import com.lambton.utilities.Blowfish;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -65,6 +67,7 @@ public class Customer extends Person
         System.out.println("Age : " + super.getAge());
         System.out.println("Mobile Number : +1 " + super.mobileNumber);
         System.out.println("Email Id : " + super.emailID);
+        System.out.println("Password : " + Blowfish.encrypt(password, Constants.key));
         System.out.println("Username : " + super.userName);
         System.out.println("Address : " + this.address);
         System.out.println("City : " + this.city);
