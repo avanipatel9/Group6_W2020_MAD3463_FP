@@ -1,9 +1,6 @@
 package com.lambton;
 import com.lambton.person.*;
-import com.lambton.vehicle.Bus;
-import com.lambton.vehicle.Car;
-import com.lambton.vehicle.MotorCycle;
-import com.lambton.vehicle.Vehicle;
+import com.lambton.vehicle.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,10 +18,9 @@ public class VehicleRentingSystem {
   List<Customer> customerList = new ArrayList<Customer>();
 
 
-
   public static void main(String[] args) throws FileNotFoundException {
       // Creating a File object that represents the disk file.
-      PrintStream o = new PrintStream(new File("Output.txt"));
+      PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
       // Store current System.out before assigning a new value
       PrintStream console = System.out;
       // Assign o to output stream
@@ -35,19 +31,16 @@ public class VehicleRentingSystem {
       // Use stored value for output stream
       System.setOut(console);
       System.out.println("This will be written on the console!");
-
-
-
-
       VehicleRentingSystem vrs = new VehicleRentingSystem();
-
       vrs.addOwner();
-      vrs.showOwnerDetails();
+      //vrs.showOwnerDetails();
       vrs.addCustomer();
-      vrs.showCustomerDetails();
+     // vrs.showCustomerDetails();
     }
 
-    public void addOwner()
+
+
+  public void addOwner()
     {
 
       LocalDate o1birthDate = LocalDate.of(1992,11,12);
@@ -355,7 +348,7 @@ public class VehicleRentingSystem {
     car.setInsured(isInsured);
     car.setNumberOfSeats(numberOfSeats);
     car.setInsuranceProviderName(insuranceProviderName);
-    car.setFuelType(fuelType);
+    car.setFuelType(FuelType.Diesel);
     car.setRatePerDay(ratePerDay);
     car.setRatePerKM((int) ratePerKM);
     car.setCarType(carType);
@@ -374,7 +367,7 @@ public class VehicleRentingSystem {
     mc.setInsured(isInsured);
     mc.setNumberOfSeats(numberOfSeats);
     mc.setInsuranceProviderName(insuranceProviderName);
-    mc.setFuelType(fuelType);
+    mc.setFuelType(FuelType.Electric);
     mc.setRatePerDay(ratePerDay);
     mc.setRatePerKM((int) ratePerKM);
     mc.setMaxSpeed(maxSpeed);
@@ -394,7 +387,7 @@ public class VehicleRentingSystem {
     bus.setInsured(isInsured);
     bus.setNumberOfSeats(numberOfSeats);
     bus.setInsuranceProviderName(insuranceProviderName);
-    bus.setFuelType(fuelType);
+    bus.setFuelType(FuelType.Petrol);
     bus.setRatePerDay(ratePerDay);
     bus.setRatePerKM((int) ratePerKM);
     bus.setBusType(busType);
@@ -424,24 +417,19 @@ public class VehicleRentingSystem {
   }
 
   public void ShowOwnerDetails() throws FileNotFoundException {
-    if (ownerList.size() > 0) 
-    {
+    if (ownerList.size() > 0) {
       System.out.println("***********************************************");
       System.out.println("-------------------OWNER DETAILS-----------------------");
       System.out.println("***********************************************");
 
-      for (Owner owner : ownerList)
-      {
+      for (Owner owner : ownerList) {
 
         owner.print();
-        if (owner.getVehicles() != null || owner.getVehicles().size() > 0)
-        {
-          for (Vehicle vehicle : owner.getVehicles())
-          {
+        if (owner.getVehicles() != null || owner.getVehicles().size() > 0) {
+          for (Vehicle vehicle : owner.getVehicles()) {
 
             vehicle.display();
-            if (vehicle.getDriver() != null)
-            {
+            if (vehicle.getDriver() != null) {
               vehicle.getDriver().print();
             }
 
@@ -449,50 +437,46 @@ public class VehicleRentingSystem {
         }
       }
     }
-  
+  }
 
-    public void displayCustomerDetails()
-  {
-    if (customerList.size() > 0)
+
+    public void displayCustomerDetails ()
     {
-      System.out.println("***********************************************");
-      System.out.println("-------------------CUSTOMER DETAILS-----------------------");
-      System.out.println("***********************************************");
+      if (customerList.size() > 0) {
+        System.out.println("***********************************************");
+        System.out.println("-------------------CUSTOMER DETAILS-----------------------");
+        System.out.println("***********************************************");
 
-      for (Customer customer : customerList)
-      {
+        for (Customer customer : customerList) {
 
-        customer.print();
-        if (customer.getVehicleRent() != null || customer.getVehicleRent().size() > 0)
-        {
-          for (VehicleRent rent : customer.getVehicleRent())
-          {
+          customer.print();
+          if (customer.getVehicleRent() != null || customer.getVehicleRent().size() > 0) {
+            for (VehicleRent rent : customer.getVehicleRent()) {
 
-            rent.print();
-            if (rent.getVehicle() != null)
-            {
+              rent.print();
+              if (rent.getVehicle() != null) {
 
-              rent.getVehicle().print();
+                rent.getVehicle().print();
 
-              if (rent.getVehicle().getDriver() != null)
-              {
-                rent.getVehicle().getDriver().print();
+                if (rent.getVehicle().getDriver() != null) {
+                  rent.getVehicle().getDriver().print();
 
+                }
               }
-            }
 
+            }
           }
         }
-      }
 
+      }
     }
   }
 
 
 
 
-  }
 
 
-}
+
+
 
