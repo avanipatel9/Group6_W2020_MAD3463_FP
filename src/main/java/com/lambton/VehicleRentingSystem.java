@@ -411,6 +411,17 @@ public class VehicleRentingSystem {
 
   }
 
+  public Vehicle getVehicleID(String vehicleId)
+  {
+    for (Vehicle vehicle : vehicleList)
+    {
+      if (vehicleId.equals(vehicle.getVehicleIdNumber()))
+      {
+        return vehicle;
+      }
+    }
+    return null;
+  }
 
 
 
