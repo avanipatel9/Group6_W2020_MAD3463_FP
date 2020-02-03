@@ -35,7 +35,7 @@ public class MotorCycle extends Vehicle
         milage = milage;
     }
 
-<<<<<<<<< Temporary merge branch 1
+
     @Override
     public void print() throws FileNotFoundException {
         PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
@@ -55,8 +55,7 @@ public class MotorCycle extends Vehicle
         System.out.println("Maximum Speed : " + maxSpeed);
         System.out.println(("Milage : " + milage));
     }
-=========
->>>>>>>>> Temporary merge branch 2
+
 
     //Limit maxSpeed function
     public int maxSpeedAllowedByAge(int age)
@@ -69,17 +68,6 @@ public class MotorCycle extends Vehicle
             maxSpeed=150;
         return  maxSpeed;
     }
-<<<<<<<<< Temporary merge branch 1
 
-=========
-    public void print() throws FileNotFoundException {
-        PrintStream o = new PrintStream(new File("Output.txt"));
-        PrintStream console = System.out;
-        System.setOut(o);
-        System.out.println("---------MotorCycle Details--------------");
-        System.out.println("Max Speed Allowed: " +maxSpeedAllowedByAge(19)+"km/hr");
-        System.out.println("Max Speed Allowed: " +maxSpeedAllowedByAge(36)+"km/hr");
-        System.out.println("Milage: " + milage);
-    }
->>>>>>>>> Temporary merge branch 2
+
 }
