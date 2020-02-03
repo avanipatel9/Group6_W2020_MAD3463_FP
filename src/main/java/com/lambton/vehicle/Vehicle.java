@@ -25,6 +25,7 @@ public abstract class Vehicle implements IDisplay
     public Vehicle() {
     }
 
+    //Parameterised Constructor
     public Vehicle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM) {
         this.vehicleIdNumber = vehicleIdNumber;
         this.vehicleInfo = vehicleInfo;
