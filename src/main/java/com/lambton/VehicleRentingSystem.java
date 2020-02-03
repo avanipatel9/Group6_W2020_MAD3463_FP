@@ -325,13 +325,27 @@ public class VehicleRentingSystem {
 
 
 
-  public void showCustomerDetails()
+  public Customer showCustomerDetails(int id, String firstName, String lastName, Gender.Gender gender, LocalDate birthDate, String mobileNumber,
+                                      String emailID, String userName, String password, String address, String city, ArrayList<VehicleRent> vehicleRents)
     {
 
-
-
+      Customer customer = new Customer();
+     // LocalDate bDate = util.getDateFromString(birthDate);
+      customer.setFirstName(firstName);
+      customer.setLastName(lastName);
+      customer.setGender(gender);
+      customer.setBirthDate(birthDate);
+      customer.setMobileNumber(mobileNumber);
+      customer.setEmailID(emailID);
+      customer.setPassword(password);
+      customer.setAddress(address);
+      customer.setCity(city);
+      return customer;
 
     }
+
+
+
 
 }
 
