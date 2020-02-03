@@ -146,8 +146,9 @@ public enum Gender
      }
 
 
+     public abstract void display();
 
-
+     public abstract boolean getVehicleRent();
  }
 
 

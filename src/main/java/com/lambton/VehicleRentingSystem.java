@@ -451,6 +451,47 @@ public class VehicleRentingSystem {
       }
     }
 
+
+    public void displayCustomerDetails()
+  {
+    if (customerList.size() > 0)
+    {
+      System.out.println("***********************************************");
+      System.out.println("-------------------CUSTOMER DETAILS-----------------------");
+      System.out.println("***********************************************");
+
+      for (Customer customer : customerList)
+      {
+
+        customer.display();
+        if (customer.getVehicleRent() != null || customer.getVehicleRent().size() > 0)
+        {
+          for (VehicleRent rent : customer.getVehicleRent())
+          {
+
+            rent.display();
+            if (rent.getVehicle() != null)
+            {
+
+              rent.getVehicle().display();
+
+              if (rent.getVehicle().getDriver() != null)
+              {
+                rent.getVehicle().getDriver().display();
+
+              }
+            }
+
+          }
+        }
+      }
+
+    }
+  }
+
+
+
+
   }
 
 

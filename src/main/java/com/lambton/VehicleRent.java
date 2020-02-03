@@ -70,6 +70,12 @@ public class VehicleRent
         return totalBillToPay;
     }
 
+    public void display() {
+        
+    }
+
+    public Vehicle getVehicle() {
+    }
 }
 
 
