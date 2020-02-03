@@ -428,9 +428,8 @@ public class VehicleRentingSystem {
         if (owner.getVehicles() != null || owner.getVehicles().size() > 0) {
           for (Vehicle vehicle : owner.getVehicles()) {
 
-            vehicle.display();
             if (vehicle.getDriver() != null) {
-              vehicle.getDriver().print();
+              vehicle.print();
             }
 
           }
