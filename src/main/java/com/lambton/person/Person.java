@@ -10,14 +10,21 @@ public enum Gender
 {
     MALE,
     FEMALE,
-    OTHERS
+    OTHERS;
+
+    public enum Gender
+    {
+        MALE,
+        FEMALE,
+        OTHERS
+    }
 }
 
  public abstract class Person implements IDisplay {
     protected int id;
     protected String firstName;
     protected  String lastName;
-    protected Gender gender;
+    protected Gender.Gender gender;
     protected LocalDate birthDate;
     protected String mobileNumber;
     protected String emailID;
@@ -26,7 +33,7 @@ public enum Gender
 
 
 
-     public Person(int id, String firstName, String lastName, Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
+     public Person(int id, String firstName, String lastName, Gender.Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
          this.id = id;
          this.firstName = firstName;
          this.lastName = lastName;
@@ -58,11 +65,11 @@ public enum Gender
         this.lastName = lastName;
     }
 
-    public Gender getGender() {
+    public Gender.Gender getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(Gender.Gender gender) {
         this.gender = gender;
     }
     public LocalDate getBirthDate() {
