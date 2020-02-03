@@ -3,6 +3,7 @@ package com.lambton.person;
 import com.lambton.VehicleRent;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Customer extends Person
 {
@@ -47,5 +48,8 @@ public class Customer extends Person
         System.out.println("Username : " + super.userName);
         System.out.println("Address : " + this.address);
         System.out.println("City : " + this.city);
+    }
+
+    public void VehicleRent(List<VehicleRent> c1rnt) {
     }
 }

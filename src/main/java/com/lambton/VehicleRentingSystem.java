@@ -17,6 +17,12 @@ import java.util.List;
 public class VehicleRentingSystem {
   private ArrayList<Vehicle> Vehicles;
 
+  List<Vehicle> vehicleList = new ArrayList<Vehicle>();
+  List<Owner> ownerList = new ArrayList<Owner>();
+  List<Customer> customerList = new ArrayList<Customer>();
+
+
+
   public static void main(String[] args) throws FileNotFoundException {
       // Creating a File object that represents the disk file.
       PrintStream o = new PrintStream(new File("Output.txt"));
@@ -32,9 +38,6 @@ public class VehicleRentingSystem {
       System.out.println("This will be written on the console!");
 
 
-    List<Vehicle> vehicleList = new ArrayList<Vehicle>();
-    List<Owner> ownerList = new ArrayList<Owner>();
-    List<Customer> customerList = new ArrayList<Customer>();
 
 
       VehicleRentingSystem vrs = new VehicleRentingSystem();
@@ -177,9 +180,27 @@ public class VehicleRentingSystem {
       o5vehicleList.add(m5);
       o5vehicleList.add(b5);
 
+      ownerList.add(o1);
+      ownerList.add(o2);
+      ownerList.add(o3);
+      ownerList.add(o4);
+      ownerList.add(o5);
 
-    //  vehicleList.add(b1);
-
+      vehicleList.add(ca1);
+      vehicleList.add(ca2);
+      vehicleList.add(ca3);
+      vehicleList.add(ca4);
+      vehicleList.add(ca5);
+      vehicleList.add(m1);
+      vehicleList.add(m2);
+      vehicleList.add(m3);
+      vehicleList.add(m4);
+      vehicleList.add(m5);
+      vehicleList.add(b1);
+      vehicleList.add(b2);
+      vehicleList.add(b3);
+      vehicleList.add(b4);
+      vehicleList.add(b5);
 
     }
 
@@ -211,6 +232,54 @@ public class VehicleRentingSystem {
       Customer c5 = new Customer(5,"Lorelei ", "Anshell", Gender.FEMALE, c5birthDate,
               "2576690158", "lanshell1@reverbnation.com", "lanshell1", "L7ZvtX5wJN",
               "34 Fuller Lane","Novorossiysk", null);
+
+
+      List<VehicleRent>c1rnt = new ArrayList<VehicleRent>();
+      List<VehicleRent>c2rnt = new ArrayList<VehicleRent>();
+      List<VehicleRent>c3rnt = new ArrayList<VehicleRent>();
+      List<VehicleRent>c4rnt = new ArrayList<VehicleRent>();
+      List<VehicleRent>c5rnt = new ArrayList<VehicleRent>();
+
+
+      LocalDate vr1startDate = LocalDate.of(2005,01,13);
+      LocalDate vr1endDate = LocalDate.of(2016,12,25);
+      VehicleRent vr1 = new VehicleRent(vr1startDate, vr1endDate, 5, "4K0845277599C59LB", 70);
+
+      LocalDate vr2startDate = LocalDate.of(2010,11,23);
+      LocalDate vr2endDate = LocalDate.of(2019,10,30);
+      VehicleRent vr2 = new VehicleRent(vr1startDate, vr1endDate, 3, "K488863SY780C912U", 50);
+
+      LocalDate vr3startDate = LocalDate.of(2014,10,21);
+      LocalDate vr3endDate = LocalDate.of(2016,02,25);
+      VehicleRent vr3 = new VehicleRent(vr1startDate, vr1endDate, 2, "1V461X50812V17645", 20);
+
+      LocalDate vr4startDate = LocalDate.of(2015,10,05);
+      LocalDate vr4endDate = LocalDate.of(2019,12,15);
+      VehicleRent vr4 = new VehicleRent(vr1startDate, vr1endDate, 1, "7BK245B52S009G251", 15);
+
+      LocalDate vr5startDate = LocalDate.of(2003,11,04);
+      LocalDate vr5endDate = LocalDate.of(2009,11,28);
+      VehicleRent vr5 = new VehicleRent(vr1startDate, vr1endDate, 8, "Z5K39Z0W76366K354", 90);
+
+      c1rnt.add(vr1);
+      c1rnt.add(vr2);
+      c1rnt.add(vr3);
+      c1rnt.add(vr4);
+      c1rnt.add(vr5);
+
+      c1.VehicleRent(c1rnt);
+      c2.VehicleRent(c2rnt);
+      c3.VehicleRent(c3rnt);
+      c4.VehicleRent(c4rnt);
+      c5.VehicleRent(c5rnt);
+
+      customerList.add(c1);
+      customerList.add(c2);
+      customerList.add(c3);
+      customerList.add(c4);
+      customerList.add(c5);
+
+
 
 
 
