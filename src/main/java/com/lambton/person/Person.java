@@ -1,28 +1,17 @@
 package com.lambton.person;
 import com.lambton.IDisplay;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public enum Gender
-{
 
-    MALE,
-    FEMALE,
-    OTHERS;
 
-    public class Gender
-    {
-    }
-}
-
- public abstract class Person implements IDisplay {
+public abstract class Person  implements IDisplay {
     protected int id;
     protected String firstName;
-    protected  String lastName;
-    protected Gender.Gender gender;
+    protected String lastName;
+    protected String gender;
     protected LocalDate birthDate;
     protected String mobileNumber;
     protected String emailID;
@@ -30,12 +19,14 @@ public enum Gender
     protected String password;
 
 
-
-     public Person(int id, String firstName, String lastName, Gender.Gender gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
+     public Person() {
+     }
+    
+     public Person(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password) {
          this.id = id;
          this.firstName = firstName;
          this.lastName = lastName;
-         this.gender = gender;
+        this.gender = gender;
          this.birthDate = birthDate;
          this.mobileNumber = mobileNumber;
          this.emailID = emailID;
@@ -47,7 +38,11 @@ public enum Gender
         return id;
     }
 
-    public String getFirstName() {
+     public void setId(int id) {
+         this.id = id;
+     }
+
+     public String getFirstName() {
         return firstName;
     }
 
@@ -63,13 +58,18 @@ public enum Gender
         this.lastName = lastName;
     }
 
-    public Gender.Gender getGender() {
+
+
+
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender.Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
+
+
     public LocalDate getBirthDate() {
         return birthDate;
     }
@@ -146,9 +146,10 @@ public enum Gender
      }
 
 
-     public abstract void display();
+
 
      public abstract boolean getVehicleRent();
+
  }
 
 

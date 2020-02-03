@@ -2,6 +2,9 @@ package com.lambton.person;
 
 import com.lambton.vehicle.Vehicle;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.List;
@@ -13,10 +16,8 @@ public class Owner extends Person
     private String website;
     List<Vehicle> vehicles;
 
-    public Owner(int id, String firstName, String lastName, Gender.Gender gender, LocalDate birthDate, String mobileNumber, String emailID,
-                 String userName, String password, String companyTitle, String landlineNumber, String website, List<Vehicle> vehicles)
 
-    {
+    public Owner(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String companyTitle, String landlineNumber, String website, List<Vehicle> vehicles) {
         super(id, firstName, lastName,gender, birthDate, mobileNumber, emailID, userName, password);
         this.companyTitle = companyTitle;
         this.landlineNumber = landlineNumber;
@@ -52,9 +53,20 @@ public class Owner extends Person
         this.website = website;
     }
 
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
+    public void setVehicles(List<Vehicle> vehicles) {
+        this.vehicles = vehicles;
+    }
+
     @Override
-    public void print()
-    {
+    public void print() throws FileNotFoundException {
+        PrintStream o = new PrintStream(new File("Output.txt"));
+        PrintStream console = System.out;
+        System.setOut(o);
+        System.out.println("--------------Owner Details-------------");
         System.out.println("Customer First Name : " + super.firstName);
         System.out.println("Customer Last Name : " + super.lastName);
         System.out.println("Gender : " + super.gender);

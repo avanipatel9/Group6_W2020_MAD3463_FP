@@ -1,6 +1,10 @@
 package com.lambton.person;
 
 import com.lambton.VehicleRent;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +15,12 @@ public class Customer extends Person
     private String city;
     ArrayList<VehicleRent> vehicleRents;
 
-    public Customer(int id, String firstName, String lastName, Gender.Gender gender, LocalDate birthDate,
-                    String mobileNumber, String emailID, String userName, String password, String address, String city, ArrayList<VehicleRent> vehicleRents)
+
+    
+    public Customer() {
+    }
+
+    public Customer(int id, String firstName, String lastName, String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, String address, String city, ArrayList<VehicleRent> vehicleRents)
     {
         super(id, firstName, lastName, gender, birthDate, mobileNumber, emailID, userName, password);
         this.address = address;
@@ -36,9 +44,20 @@ public class Customer extends Person
         this.city = city;
     }
 
+    public ArrayList<VehicleRent> getVehicleRents() {
+        return vehicleRents;
+    }
+
+    public void setVehicleRents(ArrayList<VehicleRent> vehicleRents) {
+        this.vehicleRents = vehicleRents;
+    }
+
     @Override
-    public void print()
-    {
+    public void print() throws FileNotFoundException {
+        PrintStream o = new PrintStream(new File("Output.txt"));
+        PrintStream console = System.out;
+        System.setOut(o);
+        System.out.println("--------------Customer Details-------------");
         System.out.println("Customer First Name : " + super.firstName);
         System.out.println("Customer Last Name : " + super.lastName);
         System.out.println("Gender : " + super.gender);

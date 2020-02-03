@@ -1,5 +1,8 @@
 package com.lambton.person;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.time.LocalDate;
 
 public class Driver extends Person
@@ -8,10 +11,12 @@ public class Driver extends Person
     private boolean isDrivingHistoryCleared;
     private float salary;
 
-   public Driver(int id, String firstName, String lastName, Gender.Gender gender, LocalDate birthDate,
-                 String mobileNumber, String emailID, String userName, String password,
-                 int drivingLicenceNumber, boolean isDrivingHistoryCleared, float salary)
-   {
+
+    public Driver() {
+    }
+
+   public Driver(int id, String firstName, String lastName,String gender, LocalDate birthDate, String mobileNumber, String emailID, String userName, String password, int drivingLicenceNumber, boolean isDrivingHistoryCleared, float salary) {
+
         super(id, firstName, lastName,gender, birthDate, mobileNumber, emailID, userName, password);
         this.drivingLicenceNumber = drivingLicenceNumber;
         this.isDrivingHistoryCleared = isDrivingHistoryCleared;
@@ -43,8 +48,11 @@ public class Driver extends Person
     }
 
     @Override
-    public void print()
-    {
+    public void print() throws FileNotFoundException {
+        PrintStream o = new PrintStream(new File("Output.txt"));
+        PrintStream console = System.out;
+        System.setOut(o);
+        System.out.println("--------------Driver Details-------------");
         System.out.println("Customer First Name : " + super.firstName);
         System.out.println("Customer Last Name : " + super.lastName);
         System.out.println("Gender : " + super.gender);
