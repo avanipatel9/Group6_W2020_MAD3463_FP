@@ -1,12 +1,16 @@
 package com.lambton.vehicle;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class Car extends Vehicle
 {
     String carType;
     String carColor;
 
     public Car(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String carType, String carColor) {
-        super(vehicleIdNumber, vehicleInfo, manufacturerName, isSelfDrive, driver, isInsured, insuranceProviderName, numberOfSeats, fuelType, ratePerDay, ratePerKM);
+        super();
         this.carType = carType;
         this.carColor = carColor;
     }

@@ -1,13 +1,12 @@
 package com.lambton.person;
 import com.lambton.IDisplay;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
- public abstract class Person implements IDisplay {
+public abstract class Person  implements IDisplay {
     protected int id;
     protected String firstName;
     protected String lastName;
@@ -18,6 +17,7 @@ import java.util.regex.Pattern;
     protected String userName;
     protected String password;
 
+
      public Person() {
      }
 
@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
          this.id = id;
          this.firstName = firstName;
          this.lastName = lastName;
-         this.gender = gender;
+        this.gender = gender;
          this.birthDate = birthDate;
          this.mobileNumber = mobileNumber;
          this.emailID = emailID;
@@ -64,6 +64,8 @@ import java.util.regex.Pattern;
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+
     public LocalDate getBirthDate() {
         return birthDate;
     }
@@ -138,8 +140,6 @@ import java.util.regex.Pattern;
          System.out.println(matcher.matches());
          return matcher.matches();
      }
-
-
 
 
  }

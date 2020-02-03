@@ -3,8 +3,6 @@ import com.lambton.person.*;
 import com.lambton.vehicle.Bus;
 import com.lambton.vehicle.Car;
 import com.lambton.vehicle.MotorCycle;
-import com.lambton.vehicle.Vehicle;
-import com.lambton.person.Driver;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +10,6 @@ import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class VehicleRentingSystem {
 
@@ -33,6 +30,7 @@ public class VehicleRentingSystem {
     // Use stored value for output stream
     System.setOut(console);
     System.out.println("This will be written on the console!");
+
 
     LocalDate c1birthDate = LocalDate.of(1993, 02, 27);
     Customer c1 = new Customer(1, "John", "Thomas", "Male", c1birthDate,
@@ -79,6 +77,7 @@ public class VehicleRentingSystem {
     LocalDate d5birthDate = LocalDate.of(1989, 02, 29);
     Driver d5 = new Driver(5, "Gusty", "Mityakov", "Female", d5birthDate, "6852089175", "gmityakov4@howstuffworks.com",
             "gmityakov4", "CGHjDQVnhA", 57125823, false, 1000);
+
 
     Car ca1 = new Car("Z5K39Z0W76366K354", "DX 4dr Sedan", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
             4, "Diesel", 100, 5, "SUV", "Black");
@@ -128,6 +127,7 @@ public class VehicleRentingSystem {
             8, "Petrol", 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
 
 
+
     LocalDate vr1startDate = LocalDate.of(2005, 01, 13);
     LocalDate vr1endDate = LocalDate.of(2016, 12, 25);
     VehicleRent vr1 = new VehicleRent(vr1startDate, vr1endDate, 5, "4K0845277599C59LB", 70);
@@ -147,6 +147,6 @@ public class VehicleRentingSystem {
     LocalDate vr5startDate = LocalDate.of(2003, 11, 04);
     LocalDate vr5endDate = LocalDate.of(2009, 11, 28);
     VehicleRent vr5 = new VehicleRent(vr1startDate, vr1endDate, 8, "Z5K39Z0W76366K354", 90);
-  }
-
+ 
+    }
 }

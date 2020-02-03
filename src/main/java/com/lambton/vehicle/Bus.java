@@ -1,5 +1,9 @@
 package com.lambton.vehicle;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class Bus extends Vehicle
 {
     String busType;
@@ -7,7 +11,7 @@ public class Bus extends Vehicle
     Boolean wifiAvailability;
 
     public Bus(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String busType, boolean serviceAvailability, boolean wifiAvailability) {
-        super(vehicleIdNumber, vehicleInfo, manufacturerName, isSelfDrive, driver, isInsured, insuranceProviderName, numberOfSeats, fuelType, ratePerDay, ratePerKM);
+        super();
         this.busType = busType;
         this.serviceAvailability = serviceAvailability;
         this.wifiAvailability = wifiAvailability;
