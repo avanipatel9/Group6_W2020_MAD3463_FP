@@ -4,9 +4,7 @@ import com.lambton.VehicleRent;
 import com.lambton.constants.Constants;
 import com.lambton.utilities.Blowfish;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +56,7 @@ public class Customer extends Person
         this.vehicleRents = vehicleRents;
     }
 
+    //Display Driver Deatils
     @Override
     public void print() throws FileNotFoundException {
       //  PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
