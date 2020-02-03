@@ -36,8 +36,11 @@ public class MotorCycle extends Vehicle
     }
 
     @Override
-    public void print()
-    {
+    public void print() throws FileNotFoundException {
+        PrintStream o = new PrintStream(new File("output_vehicle_renting_system.txt"));
+        PrintStream console = System.out;
+        System.setOut(o);
+        System.out.println("--------------Motar Cycle Details-------------");
         System.out.println("Vehicle Identification Number : " + super.vehicleIdNumber);
         System.out.println("Vehicle Information : " + super.vehicleInfo);
         System.out.println("Manufacturer : " + super.manufacturerName);
@@ -63,13 +66,5 @@ public class MotorCycle extends Vehicle
             maxSpeed=150;
         return  maxSpeed;
     }
-    public void print() throws FileNotFoundException {
-        PrintStream o = new PrintStream(new File("Output.txt"));
-        PrintStream console = System.out;
-        System.setOut(o);
-        System.out.println("---------MotorCycle Details--------------");
-        System.out.println("Max Speed Allowed: " +maxSpeedAllowedByAge(19)+"km/hr");
-        System.out.println("Max Speed Allowed: " +maxSpeedAllowedByAge(36)+"km/hr");
-        System.out.println("Milage: " +Milage);
-    }
+
 }
