@@ -23,7 +23,7 @@ public abstract class Vehicle implements IDisplay
     public Vehicle() {
     }
 
-    public Vehicle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, HashMap<String, String> ratePerKmVehicleTpe) {
+    public Vehicle(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured, String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM) {
         this.vehicleIdNumber = vehicleIdNumber;
         this.vehicleInfo = vehicleInfo;
         this.manufacturerName = manufacturerName;
@@ -35,7 +35,7 @@ public abstract class Vehicle implements IDisplay
         this.fuelType = fuelType;
         this.ratePerDay = ratePerDay;
         this.ratePerKM = ratePerKM;
-        this.ratePerKmVehicleTpe = ratePerKmVehicleTpe;
+
     }
 
     public HashMap<String, String> getRatePerKmVehicleTpe() {

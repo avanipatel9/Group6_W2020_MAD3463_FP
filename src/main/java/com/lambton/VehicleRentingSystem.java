@@ -96,19 +96,19 @@ public class VehicleRentingSystem {
 
 
     Car ca1 = new Car("Z5K39Z0W76366K354", "DX 4dr Sedan", "Honda", Boolean.TRUE, "Genni", Boolean.TRUE, "Logan",
-            4, "Diesel", 100, 5, "SUV", "Black");
+            4, FuelType.Diesel, 100, 5, "SUV", "Black");
 
     Car ca2 = new Car("6V035N1185A022427", "Limited 4dr SUV (4.7L 8cyl 5A)", "Suzuki", Boolean.FALSE, "Alford", Boolean.TRUE, "Ben",
-            6, "Diesel", 100, 5, "Sedan", "Gray");
+            6, FuelType.Diesel, 100, 5, "Sedan", "Gray");
 
     Car ca3 = new Car("1V461X50812V17645", "SEL 4dr Sedan (3.0L 6cyl 4A)", "Honda", Boolean.TRUE, "Gusty", Boolean.TRUE, "William",
-            2, "Electric", 100, 5, "Compact", "White");
+            2, FuelType.Electric, 100, 5, "Compact", "White");
 
     Car ca4 = new Car("4K0845277599C59LB", "4dr SUV AWD (2.5L 4cyl gas/electric hybrid CVT)", "BMW", Boolean.TRUE, "Alford", Boolean.TRUE, "Edward",
-            4, "Petrol", 100, 5, "Luxury", "Red");
+            4, FuelType.Petrol, 100, 5, "Luxury", "Red");
 
     Car ca5 = new Car("6V035N1185A022427", "4dr Sedan w/Technology Package (3.5L 6cyl 6A)", "Toyoto", Boolean.FALSE, "Padraig", Boolean.FALSE, "Phenix",
-            8, "Diesel", 100, 5, "Minivan", "Black");
+            8, FuelType.Diesel, 100, 5, "Minivan", "Black");
 
 
     MotorCycle m1 = new MotorCycle("V99JP7L7808854296", "4dr Crew Cab 4WD SB w/2HY (6.0L 8cyl gas/electric hybrid 4A)", "Yamaha", Boolean.TRUE, "Rocky", Boolean.TRUE,
@@ -128,19 +128,19 @@ public class VehicleRentingSystem {
 
 
     Bus b1 = new Bus("5S579939423J74119", "xDrive30i 4dr SUV AWD (3.0L 6cyl 6M)", "Leo", Boolean.TRUE, "Samuel", Boolean.FALSE, "Victor",
-            12, "Diesel", 250, 7, "Volvo", Boolean.FALSE, Boolean.TRUE);
+            12, FuelType.Diesel, 250, 7, "Volvo", Boolean.FALSE, Boolean.TRUE);
 
     Bus b2 = new Bus("K14G7289138870436", "Laramie 4dr Club Cab SB (3.7L 6cyl 4A)", "Noha", Boolean.TRUE, "Theo", Boolean.FALSE, "Antonie",
-            14, "Diesel", 250, 7, "Bus", Boolean.TRUE, Boolean.TRUE);
+            14, FuelType.Diesel, 250, 7, "Bus", Boolean.TRUE, Boolean.TRUE);
 
     Bus b3 = new Bus("G9416715255045385", "S 4dr SUV AWD (2.5L 4cyl CVT)", "Oliver", Boolean.FALSE, "Nolam", Boolean.TRUE, "Louis",
-            8, "Petrol", 250, 7, "MiniBus", Boolean.FALSE, Boolean.FALSE);
+            8, FuelType.Petrol, 250, 7, "MiniBus", Boolean.FALSE, Boolean.FALSE);
 
     Bus b4 = new Bus("4XZ2M7U06Z329433A", "Sport 4dr SUV 4WD (3.5L 6cyl 5A)", "Charles", Boolean.TRUE, "Andrew", Boolean.TRUE, "Lucas",
-            12, "Diesel", 250, 7, "Coach", Boolean.TRUE, Boolean.TRUE);
+            12, FuelType.Diesel, 250, 7, "Coach", Boolean.TRUE, Boolean.TRUE);
 
     Bus b5 = new Bus("V99JP7L7808854296", "2dr Regular Cab LB (4.0L 6cyl 6M)", "Olivia", Boolean.TRUE, "Mathaes", Boolean.TRUE, "Justin",
-            8, "Petrol", 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
+            8, FuelType.Petrol, 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
 
 
     o1vehicleList.add(ca1);

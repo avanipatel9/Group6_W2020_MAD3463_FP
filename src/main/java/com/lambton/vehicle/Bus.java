@@ -14,7 +14,7 @@ public class Bus extends Vehicle
     }
 
     public Bus(String vehicleIdNumber, String vehicleInfo, String manufacturerName, Boolean isSelfDrive, String driver, Boolean isInsured,
-               String insuranceProviderName, int numberOfSeats, String fuelType, int ratePerDay, double ratePerKM, String busType,
+               String insuranceProviderName, int numberOfSeats, FuelType fuelType, int ratePerDay, double ratePerKM, String busType,
                boolean serviceAvailability, boolean wifiAvailability)
     {
         this.busType = busType;
