@@ -157,7 +157,25 @@ public class VehicleRentingSystem {
               8, "Petrol", 250, 7, "MiniBus", Boolean.TRUE, Boolean.TRUE);
 
 
+      o1vehicleList.add(ca1);
+      o1vehicleList.add(m1);
+      o1vehicleList.add(b1);
 
+      o1vehicleList.add(ca2);
+      o1vehicleList.add(m2);
+      o1vehicleList.add(b2);
+
+      o1vehicleList.add(ca3);
+      o1vehicleList.add(m3);
+      o1vehicleList.add(b3);
+
+      o1vehicleList.add(ca4);
+      o1vehicleList.add(m4);
+      o1vehicleList.add(b4);
+
+      o1vehicleList.add(ca5);
+      o1vehicleList.add(m5);
+      o1vehicleList.add(b5);
 
 
 
