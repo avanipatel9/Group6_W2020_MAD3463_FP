@@ -16,7 +16,7 @@ import java.util.List;
 //Main class
 public class VehicleRentingSystem {
 
-  public static final String SAMPLE_XLSX_FILE_PATH = "";
+  public static final String SAMPLE_XLSX_FILE_PATH = "/Users/avanipatel/Desktop/Java/Data_FinalProject_MAD3463.xlsx";
   private ArrayList<Vehicle> Vehicles;
   List<Vehicle> vehicleList = new ArrayList<Vehicle>();
   List<Owner> ownerList = new ArrayList<Owner>();
@@ -52,6 +52,12 @@ public class VehicleRentingSystem {
       System.out.println("=> " + sheet.getSheetName());
     }
 
+
+        /*
+           ==================================================================
+           Iterating over all the rows and columns in a Sheet (Multiple ways)
+           ==================================================================
+        */
     for (int i = 0; i<7; i++)
     {
       // Getting the Sheet at index zero
@@ -78,6 +84,7 @@ public class VehicleRentingSystem {
       }
     }
 
+    // Closing the workbook
     workbook.close();
 
 
